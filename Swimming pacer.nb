@@ -1,0 +1,225 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7881,        217]
+NotebookOptionsPosition[      7130,        193]
+NotebookOutlinePosition[      7471,        208]
+CellTagsIndexPosition[      7428,        205]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["H2", "2"], "\[Equal]", 
+       RowBox[{
+        SuperscriptBox["L", "2"], "+", 
+        SuperscriptBox["h", "2"]}]}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       SuperscriptBox["H1", "2"], "\[Equal]", 
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"L", "+", "\[CapitalDelta]L"}], ")"}], "2"], "+", 
+        SuperscriptBox["h", "2"]}]}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Tan", "[", "\[Phi]", "]"}], "\[Equal]", 
+       FractionBox["L", "h"]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[CapitalDelta]L", ",", "L", ",", "h"}], "}"}]}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.7414648556359997`*^9, 3.741464965291*^9}, {
+  3.741465068106*^9, 3.7414651201835003`*^9}, {3.741465150486*^9, 
+  3.7414652246584997`*^9}, {3.7414652750985003`*^9, 3.741465334041*^9}, {
+  3.7414653770135*^9, 
+  3.741465508696*^9}},ExpressionUUID->"36c9320e-f972-419d-8fdf-48f0e64e4b3e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\[CapitalDelta]L", "\[Rule]", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"H2", " ", 
+          RowBox[{"Tan", "[", "\[Phi]", "]"}]}], 
+         SqrtBox[
+          RowBox[{"1", "+", 
+           SuperscriptBox[
+            RowBox[{"Tan", "[", "\[Phi]", "]"}], "2"]}]]]}], "+", 
+       FractionBox[
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox["H1", "2"], "-", 
+          SuperscriptBox["H2", "2"], "+", 
+          RowBox[{
+           SuperscriptBox["H1", "2"], " ", 
+           SuperscriptBox[
+            RowBox[{"Tan", "[", "\[Phi]", "]"}], "2"]}]}]], 
+        SqrtBox[
+         RowBox[{"1", "+", 
+          SuperscriptBox[
+           RowBox[{"Tan", "[", "\[Phi]", "]"}], "2"]}]]]}]}], ",", 
+     RowBox[{"L", "\[Rule]", 
+      FractionBox[
+       RowBox[{"H2", " ", 
+        RowBox[{"Tan", "[", "\[Phi]", "]"}]}], 
+       SqrtBox[
+        RowBox[{"1", "+", 
+         SuperscriptBox[
+          RowBox[{"Tan", "[", "\[Phi]", "]"}], "2"]}]]]}], ",", 
+     RowBox[{"h", "\[Rule]", 
+      FractionBox["H2", 
+       SqrtBox[
+        RowBox[{"1", "+", 
+         SuperscriptBox[
+          RowBox[{"Tan", "[", "\[Phi]", "]"}], "2"]}]]]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"H1", ",", "1", ",", "10"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"H2", ",", "0", ",", "10"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Phi]", ",", "0", ",", 
+     RowBox[{"90", "\[Degree]"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7414655434309998`*^9, 
+  3.7414656159560003`*^9}},ExpressionUUID->"d05ab556-f5c3-4864-841c-\
+937a111c7764"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`H1$$ = 5.76, $CellContext`H2$$ = 
+    5.38, $CellContext`\[Phi]$$ = 1.0712830948741194`, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`H1$$], 1, 10}, {
+      Hold[$CellContext`H2$$], 0, 10}, {
+      Hold[$CellContext`\[Phi]$$], 0, 90 Degree}}, Typeset`size$$ = {
+    272., {2., 9.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`H1$7032$$ = 
+    0, $CellContext`H2$7037$$ = 0, $CellContext`\[Phi]$7038$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`H1$$ = 1, $CellContext`H2$$ = 
+        0, $CellContext`\[Phi]$$ = 0}, "ControllerVariables" :> {
+        Hold[$CellContext`H1$$, $CellContext`H1$7032$$, 0], 
+        Hold[$CellContext`H2$$, $CellContext`H2$7037$$, 0], 
+        Hold[$CellContext`\[Phi]$$, $CellContext`\[Phi]$7038$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, 
+      "Body" :> {$CellContext`\[CapitalDelta]L -> -($CellContext`H2$$ 
+           Tan[$CellContext`\[Phi]$$]/Sqrt[1 + Tan[$CellContext`\[Phi]$$]^2]) + 
+         Sqrt[$CellContext`H1$$^2 - $CellContext`H2$$^2 + $CellContext`H1$$^2 
+             Tan[$CellContext`\[Phi]$$]^2]/Sqrt[
+          1 + Tan[$CellContext`\[Phi]$$]^2], $CellContext`L -> \
+$CellContext`H2$$ Tan[$CellContext`\[Phi]$$]/Sqrt[
+         1 + Tan[$CellContext`\[Phi]$$]^2], $CellContext`h -> \
+$CellContext`H2$$/Sqrt[1 + Tan[$CellContext`\[Phi]$$]^2]}, 
+      "Specifications" :> {{$CellContext`H1$$, 1, 10}, {$CellContext`H2$$, 0, 
+         10}, {$CellContext`\[Phi]$$, 0, 90 Degree}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{323., {78., 85.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.741465617176*^9},ExpressionUUID->"51d8c6b6-050b-4d53-ae8e-6897103e59fe"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["\[CapitalDelta]L", "2"], "\[Equal]", 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"L", "+", "\[CapitalDelta]L"}], ")"}], "2"], "+", 
+     SuperscriptBox["L", "2"], "+", 
+     SuperscriptBox["h", "2"], "-", 
+     RowBox[{"2", "*", 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"L", "+", "\[CapitalDelta]L"}], ")"}], "2"], "+", 
+        SuperscriptBox["h", "2"]}]], "*", 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["L", "2"], "+", 
+        SuperscriptBox["h", "2"]}]], 
+      RowBox[{"Cos", "[", "\[Theta]", "]"}]}]}]}], ",", "h"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7414651313185*^9, 
+  3.7414651470285*^9}},ExpressionUUID->"5dd41a0e-cab0-44c4-b8cb-7ae61a6894bd"],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["\[CapitalDelta]L", "2"], "\[Equal]", 
+  RowBox[{
+   SuperscriptBox["H1", "2"], "+", 
+   SuperscriptBox["H2", "2"], "-", 
+   RowBox[{"2", " ", "H1", "*", "H2", "*", 
+    RowBox[{"Cos", "[", "\[Theta]", "]"}]}]}]}]], "Input",ExpressionUUID->\
+"a121b649-62b4-4cd3-95f8-08abedaafee3"]
+},
+WindowSize->{944, 982},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"11.1 for Microsoft Windows (64-bit) (April 18, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1092, 28, 115, "Input", "ExpressionUUID" -> \
+"36c9320e-f972-419d-8fdf-48f0e64e4b3e"],
+Cell[CellGroupData[{
+Cell[1675, 52, 1679, 51, 102, InheritFromParent, "ExpressionUUID" -> \
+"d05ab556-f5c3-4864-841c-937a111c7764"],
+Cell[3357, 105, 2594, 49, 180, "Output", "ExpressionUUID" -> \
+"51d8c6b6-050b-4d53-ae8e-6897103e59fe"]
+}, Open  ]],
+Cell[5966, 157, 835, 24, 44, "Input", "ExpressionUUID" -> \
+"5dd41a0e-cab0-44c4-b8cb-7ae61a6894bd"],
+Cell[6804, 183, 322, 8, 30, "Input", "ExpressionUUID" -> \
+"a121b649-62b4-4cd3-95f8-08abedaafee3"]
+}
+]
+*)
+

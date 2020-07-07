@@ -1,0 +1,121 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4293,        113]
+NotebookOptionsPosition[      3756,         93]
+NotebookOutlinePosition[      4098,        108]
+CellTagsIndexPosition[      4055,        105]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"night", " ", "=", 
+     RowBox[{"72", "*", "60", "\"\<min\>\"", "*", "60", 
+      FractionBox["\"\<second\>\"", "\"\<min\>\""]}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"lengthOfVideo", "=", 
+     RowBox[{"60", "\"\<second\>\""}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"pics", "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Solve", "[", 
+       RowBox[{
+        RowBox[{"lengthOfVideo", "\[Equal]", 
+         FractionBox["x", 
+          RowBox[{"30.", 
+           FractionBox["\"\<picture\>\"", "\"\<second\>\""]}]]}], ",", "x"}], 
+       "]"}], "[", 
+      RowBox[{"[", 
+       RowBox[{"-", "1"}], "]"}], "]"}], "[", 
+     RowBox[{"[", 
+      RowBox[{"-", "1"}], "]"}], "]"}]}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Solve", "[", 
+     RowBox[{
+      RowBox[{"night", "==", 
+       RowBox[{"x", "*", "pictureLength"}]}], ",", "pictureLength"}], "]"}], "/.",
+     "pics"}], "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.707701583488743*^9, 3.7077015865645227`*^9}, {
+  3.707701626908546*^9, 3.7077016519515533`*^9}, {3.7077017278101764`*^9, 
+  3.7077020671192493`*^9}, {3.7077050305583725`*^9, 3.7077050327575016`*^9}, {
+  3.70771156928694*^9, 3.7077116291568155`*^9}, {3.707757114214642*^9, 
+  3.7077571146833787`*^9}, {3.707761985777629*^9, 3.7077620073039126`*^9}, {
+  3.707934423659772*^9, 3.7079344661698303`*^9}, {3.70843529553798*^9, 
+  3.708435320114822*^9}, {3.724797385766*^9, 3.724797420617*^9}, {
+  3.7247975194055*^9, 3.7247975216184998`*^9}, {3.7248007034025*^9, 
+  3.724800703782*^9}},ExpressionUUID->"4ab5da3d-d10d-471c-807d-6aecabf39e38"],
+
+Cell[BoxData[
+ RowBox[{"x", "\[Rule]", 
+  RowBox[{"1800.`", " ", "\<\"picture\"\>"}]}]], "Output",
+ CellChangeTimes->{{3.7077017460895987`*^9, 3.707701784796211*^9}, {
+   3.7077018551031218`*^9, 3.7077018584321547`*^9}, {3.7077018943204136`*^9, 
+   3.7077020674802933`*^9}, 3.707705033660445*^9, {3.7077115705005274`*^9, 
+   3.707711629764516*^9}, 3.7077571159223847`*^9, {3.707761998033759*^9, 
+   3.707762007860279*^9}, {3.7079344452479153`*^9, 3.707934466637911*^9}, {
+   3.70843530248267*^9, 3.708435320816195*^9}, {3.7247973907539997`*^9, 
+   3.7247974222005*^9}, 3.7247975223975*^9, 
+   3.7248007044705*^9},ExpressionUUID->"d3db99d6-b83c-4413-b093-2e4f8041579e"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"pictureLength", "\[Rule]", 
+    FractionBox[
+     RowBox[{"144.`", " ", "\<\"second\"\>"}], "\<\"picture\"\>"]}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.7077017460895987`*^9, 3.707701784796211*^9}, {
+   3.7077018551031218`*^9, 3.7077018584321547`*^9}, {3.7077018943204136`*^9, 
+   3.7077020674802933`*^9}, 3.707705033660445*^9, {3.7077115705005274`*^9, 
+   3.707711629764516*^9}, 3.7077571159223847`*^9, {3.707761998033759*^9, 
+   3.707762007860279*^9}, {3.7079344452479153`*^9, 3.707934466637911*^9}, {
+   3.70843530248267*^9, 3.708435320816195*^9}, {3.7247973907539997`*^9, 
+   3.7247974222005*^9}, 3.7247975223975*^9, 
+   3.7248007044775*^9},ExpressionUUID->"8ce3e8b2-9c1a-4f55-8fbb-92b6038ddf14"]
+}, Open  ]]
+},
+WindowSize->{853, 697},
+WindowMargins->{{Automatic, 0}, {-6, Automatic}},
+FrontEndVersion->"11.1 for Microsoft Windows (64-bit) (April 18, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1718, 40, 192, "Input", "ExpressionUUID" -> \
+"4ab5da3d-d10d-471c-807d-6aecabf39e38"],
+Cell[2301, 64, 668, 10, 30, "Output", "ExpressionUUID" -> \
+"d3db99d6-b83c-4413-b093-2e4f8041579e"],
+Cell[2972, 76, 768, 14, 50, "Output", "ExpressionUUID" -> \
+"8ce3e8b2-9c1a-4f55-8fbb-92b6038ddf14"]
+}, Open  ]]
+}
+]
+*)
+

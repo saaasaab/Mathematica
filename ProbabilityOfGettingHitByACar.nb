@@ -1,0 +1,427 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     17836,        419]
+NotebookOptionsPosition[     16608,        380]
+NotebookOutlinePosition[     16980,        396]
+CellTagsIndexPosition[     16937,        393]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["One Lane Road", "Subsubsection",
+ CellChangeTimes->{{3.7221056757475*^9, 
+  3.7221056811665*^9}},ExpressionUUID->"a078411d-5187-4089-adc2-671aa58d60da"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", "\"\<Global`*\>\"", "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"dNeedToCover", "=", 
+   RowBox[{"width", "+", "length"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"distanceBetweenCars", "=", "x"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"vCarNotMe", "=", "vb"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"vCarMe", "=", "va"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"timeVaToCross", "=", 
+    FractionBox["dNeedToCover", "vCarMe"]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"distanceVbCovers", "=", 
+   RowBox[{"vCarNotMe", "*", "timeVaToCross"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"bufferZone", "=", 
+    RowBox[{"distanceBetweenCars", "-", "distanceVbCovers", "-", "width"}]}], 
+   ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"probabilityOfNotHittingCar", "\[Equal]", 
+  RowBox[{"Expand", "[", 
+   RowBox[{"bufferZone", "/", 
+    RowBox[{"(", 
+     RowBox[{"length", "+", "distanceBetweenCars"}], ")"}]}], 
+   "]"}]}]}], "Input",
+ CellChangeTimes->{{3.7221056858105*^9, 3.7221057594605*^9}, {
+   3.7221071828265*^9, 3.7221071859175*^9}, {3.7221075116175003`*^9, 
+   3.7221075154265003`*^9}, {3.7221075992145*^9, 3.7221076263115*^9}, {
+   3.7221076694554996`*^9, 3.7221077265225*^9}, {3.7221077573735*^9, 
+   3.7221077863615*^9}, {3.7221078618605003`*^9, 3.7221078717715*^9}, {
+   3.7221079082405*^9, 3.7221079468295*^9}, {3.7221083438945*^9, 
+   3.7221083456275*^9}, {3.7221092566555*^9, 3.7221092611735*^9}, {
+   3.722114581762*^9, 3.722114597416*^9}, {3.722118025236*^9, 
+   3.7221180400880003`*^9}, {3.7221197418129997`*^9, 3.722119750426*^9}, 
+   3.722119862257*^9, {3.722120158917*^9, 3.722120163429*^9}, {
+   3.722139538046*^9, 3.722139563617*^9}, {3.7221860761555*^9, 
+   3.722186078133*^9}, 3.7221861083945*^9, {3.7221865647865*^9, 
+   3.7221865728335*^9}, {3.7221891224960003`*^9, 3.7221891519845*^9}, {
+   3.722195263976*^9, 3.7221952646070004`*^9}, {3.722197254387*^9, 
+   3.7221972546800003`*^9}, {3.722197289416*^9, 3.722197308759*^9}, {
+   3.7221973389779997`*^9, 3.722197358528*^9}, {3.7221976779519997`*^9, 
+   3.722197680359*^9}, {3.722198292993*^9, 3.722198331729*^9}, {
+   3.7221983696429996`*^9, 3.722198369918*^9}, 3.722198405224*^9, 
+   3.72219844902*^9, {3.72234740892*^9, 3.7223474552574997`*^9}, {
+   3.7224834968175*^9, 3.7224835388125*^9}, {3.7224835713055*^9, 
+   3.7224835761879997`*^9}, {3.7224836664045*^9, 3.722483669867*^9}, {
+   3.7224837012025003`*^9, 3.7224837014825*^9}, {3.722484089248*^9, 
+   3.722484113008*^9}, {3.722484156193*^9, 3.7224841565505*^9}, {
+   3.7224843830550003`*^9, 3.7224844063925*^9}, {3.722484877179*^9, 
+   3.722484885594*^9}, {3.7224869204224997`*^9, 3.7224869217545*^9}, {
+   3.7224870744344997`*^9, 3.7224870850495*^9}, {3.7224877180575*^9, 
+   3.7224877235664997`*^9}, {3.7225181908185*^9, 3.7225182109785*^9}, {
+   3.7225182426385*^9, 3.7225182481184998`*^9}, {3.723735343387*^9, 
+   3.723735351307*^9}, 
+   3.750292006108*^9},ExpressionUUID->"41efe0d7-cd68-4def-a2b7-ce2a63a3c014"],
+
+Cell[BoxData[
+ RowBox[{"probabilityOfNotHittingCar", "\[Equal]", 
+  RowBox[{
+   RowBox[{"-", 
+    FractionBox[
+     RowBox[{"length", " ", "vb"}], 
+     RowBox[{"va", " ", 
+      RowBox[{"(", 
+       RowBox[{"length", "+", "x"}], ")"}]}]]}], "-", 
+   FractionBox["width", 
+    RowBox[{"length", "+", "x"}]], "-", 
+   FractionBox[
+    RowBox[{"vb", " ", "width"}], 
+    RowBox[{"va", " ", 
+     RowBox[{"(", 
+      RowBox[{"length", "+", "x"}], ")"}]}]], "+", 
+   FractionBox["x", 
+    RowBox[{"length", "+", "x"}]]}]}]], "Output",
+ CellChangeTimes->{
+  3.7221057093485003`*^9, {3.7221057569575*^9, 3.7221057599895*^9}, {
+   3.7221071838705*^9, 3.7221071863575*^9}, {3.7221075160325003`*^9, 
+   3.7221075247195*^9}, {3.7221076059175*^9, 3.7221076269055*^9}, {
+   3.7221076869975*^9, 3.7221077271435003`*^9}, {3.7221077594165*^9, 
+   3.7221077869525003`*^9}, {3.7221078641365*^9, 3.7221078784575*^9}, {
+   3.7221079224075003`*^9, 3.7221079473615*^9}, 3.7221083463025*^9, 
+   3.7221091109515*^9, {3.7221092574045*^9, 3.7221092615965*^9}, {
+   3.722114582389*^9, 3.722114598288*^9}, {3.722118026242*^9, 
+   3.722118040534*^9}, {3.722119743928*^9, 3.722119750984*^9}, 
+   3.722119862719*^9, {3.722120144402*^9, 3.722120163899*^9}, {
+   3.722139546783*^9, 3.72213956479*^9}, {3.722186081355*^9, 
+   3.722186108875*^9}, 3.722186574671*^9, 3.722187228222*^9, {
+   3.7221891193245*^9, 3.722189154008*^9}, 3.7221952673269997`*^9, 
+   3.722197255373*^9, {3.722197299191*^9, 3.722197309219*^9}, 
+   3.722197359087*^9, 3.722197682157*^9, {3.722198294797*^9, 
+   3.722198332219*^9}, 3.722198370757*^9, 3.722198408439*^9, 
+   3.722198449677*^9, {3.722347427441*^9, 3.7223474559705*^9}, 
+   3.7224834347495003`*^9, {3.7224834974775*^9, 3.7224835395875*^9}, {
+   3.7224835721755*^9, 3.722483576508*^9}, {3.722483679005*^9, 
+   3.7224837028450003`*^9}, {3.7224843842725*^9, 3.7224844190525*^9}, {
+   3.7224848785365*^9, 3.7224848860115*^9}, 3.7224869229084997`*^9, 
+   3.7224870860785*^9, 3.7225182117635*^9, {3.7225182431584997`*^9, 
+   3.722518248801*^9}, 3.7237353520045*^9, {3.7374732257060003`*^9, 
+   3.7374732321429996`*^9}, 
+   3.750292006855*^9},ExpressionUUID->"1f4c348c-a5d7-46ff-b0ec-4dc0cdf03af1"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Two Lane Road", "Subsubsection",
+ CellChangeTimes->{{3.7224843320275*^9, 
+  3.7224843347*^9}},ExpressionUUID->"97475c05-1872-4108-ad72-385c2fb84524"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", "\"\<Global`*\>\"", "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"laneSpace", "=", 
+   RowBox[{"width", "/", "2"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"dNeedToCoverC", "=", 
+   RowBox[{
+    RowBox[{"2", "width"}], "+", "length", "+", "laneSpace"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"dNeedToCoverB", "=", 
+   RowBox[{"width", "+", "length"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"distanceBetweenCars", "=", "x"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"vCarNotMeB", "=", "vb"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"vCarNotMeC", "=", "vc"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"vCarMe", "=", "va"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"timeVaToCrossC", "=", 
+   FractionBox["dNeedToCoverC", "vCarMe"]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"timeVaToCrossB", "=", 
+    FractionBox["dNeedToCoverB", "vCarMe"]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"distanceVbCovers", "=", 
+   RowBox[{"vCarNotMeB", "*", "timeVaToCrossB"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"distanceVcCovers", "=", 
+   RowBox[{"vCarNotMeC", "*", "timeVaToCrossC"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"bufferZone", "=", 
+    RowBox[{
+    "distanceBetweenCars", "-", "distanceVbCovers", "-", "distanceVcCovers", 
+     "-", "width"}]}], ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"probabilityOfNotHittingCar", "\[Equal]", 
+  RowBox[{"Expand", "[", 
+   RowBox[{"bufferZone", "/", 
+    RowBox[{"(", 
+     RowBox[{"length", "+", "distanceBetweenCars"}], ")"}]}], 
+   "]"}]}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.721872834533*^9, 3.721872958602*^9}, {3.721872997756*^9,
+    3.721873286892*^9}, {3.7218733201610003`*^9, 3.721873516212*^9}, {
+   3.7218735958199997`*^9, 3.721873638426*^9}, {3.721874035873*^9, 
+   3.721874099901*^9}, {3.721874178078*^9, 3.7218743047980003`*^9}, {
+   3.7218743454309998`*^9, 3.721874363366*^9}, {3.721881040091*^9, 
+   3.721881054112*^9}, {3.721881090233*^9, 3.721881232369*^9}, {
+   3.721884729981*^9, 3.7218847796730003`*^9}, {3.721884846512*^9, 
+   3.721884884987*^9}, {3.721884930817*^9, 3.721885004646*^9}, {
+   3.721885039248*^9, 3.721885052207*^9}, {3.721885090887*^9, 
+   3.721885163409*^9}, {3.721885204658*^9, 3.721885308262*^9}, {
+   3.721920177042*^9, 3.721920202933*^9}, {3.72192032892*^9, 
+   3.721920336025*^9}, {3.721920367807*^9, 3.721920403038*^9}, {
+   3.721920453417*^9, 3.721920698863*^9}, {3.722102182083*^9, 
+   3.722102225743*^9}, {3.7221022895155*^9, 3.7221026098775*^9}, {
+   3.7221948635030003`*^9, 3.722194876175*^9}, {3.722194937748*^9, 
+   3.722195046282*^9}, {3.7221950909709997`*^9, 3.7221951672060003`*^9}, {
+   3.722196062578*^9, 3.722196081983*^9}, 3.722196122387*^9, 
+   3.7221963164379997`*^9, 3.722196750939*^9, 3.7224840138684998`*^9, {
+   3.7224841258355*^9, 3.7224841271955*^9}, {3.7224843494575*^9, 
+   3.7224843498424997`*^9}, {3.7224844317375*^9, 3.722484433675*^9}, 
+   3.7224844770290003`*^9, {3.7224846076665*^9, 3.722484620689*^9}, {
+   3.7224847460135*^9, 3.7224847542609997`*^9}, {3.7224847995715*^9, 
+   3.7224848201865*^9}, {3.7224849532595*^9, 3.722485009892*^9}, {
+   3.7224850629325*^9, 3.7224851078405*^9}, {3.722485153659*^9, 
+   3.7224851759965*^9}, {3.7224852117345*^9, 3.722485211807*^9}, {
+   3.7224852551400003`*^9, 3.7224853410625*^9}, {3.722485488969*^9, 
+   3.722485493704*^9}, {3.722485703539*^9, 3.7224857059065*^9}, {
+   3.7224875790285*^9, 3.7224876167045*^9}, {3.722489092465*^9, 
+   3.722489146682*^9}, {3.7224892314630003`*^9, 3.722489248693*^9}, {
+   3.722489293568*^9, 3.722489298277*^9}, {3.7225180532530003`*^9, 
+   3.7225180668955*^9}, {3.722518218341*^9, 3.7225182211835003`*^9}, {
+   3.7237353596095*^9, 3.723735361567*^9}, {3.75029203273*^9, 
+   3.750292044939*^9}},ExpressionUUID->"a55968a9-5376-4d73-afbc-71601117388e"],
+
+Cell[BoxData[
+ RowBox[{"probabilityOfNotHittingCar", "\[Equal]", 
+  RowBox[{
+   RowBox[{"-", 
+    FractionBox[
+     RowBox[{"length", " ", "vb"}], 
+     RowBox[{"va", " ", 
+      RowBox[{"(", 
+       RowBox[{"length", "+", "x"}], ")"}]}]]}], "-", 
+   FractionBox[
+    RowBox[{"length", " ", "vc"}], 
+    RowBox[{"va", " ", 
+     RowBox[{"(", 
+      RowBox[{"length", "+", "x"}], ")"}]}]], "-", 
+   FractionBox["width", 
+    RowBox[{"length", "+", "x"}]], "-", 
+   FractionBox[
+    RowBox[{"vb", " ", "width"}], 
+    RowBox[{"va", " ", 
+     RowBox[{"(", 
+      RowBox[{"length", "+", "x"}], ")"}]}]], "-", 
+   FractionBox[
+    RowBox[{"5", " ", "vc", " ", "width"}], 
+    RowBox[{"2", " ", "va", " ", 
+     RowBox[{"(", 
+      RowBox[{"length", "+", "x"}], ")"}]}]], "+", 
+   FractionBox["x", 
+    RowBox[{"length", "+", "x"}]]}]}]], "Output",
+ CellChangeTimes->{{3.7224856978065*^9, 3.7224857041165*^9}, 
+   3.7224859352955*^9, {3.7224875832265*^9, 3.7224876098375*^9}, 
+   3.7224876787105*^9, {3.722489106355*^9, 3.722489147303*^9}, {
+   3.722489232146*^9, 3.722489248987*^9}, 3.722489298973*^9, {
+   3.7225180578255*^9, 3.722518067403*^9}, 3.722518169151*^9, 
+   3.722518221836*^9, 3.723735362067*^9, 
+   3.7502920333859997`*^9},ExpressionUUID->"b14fb825-442e-4e05-8b0c-\
+def9a7ebf046"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"1", "-", 
+    FractionBox["1", "va"]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"va", ",", "0", ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.722518265801*^9, 
+  3.7225183095085*^9}},ExpressionUUID->"384b4c51-41a5-4248-b534-91f9d21e7ea8"],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {}, 
+    TagBox[
+     {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], Opacity[
+      1.], LineBox[CompressedData["
+1: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
+hK7mbhcIDwfxbEpaaUL/D2FfRSM=
+       "]]},
+     Annotation[#, "Charting`Private`Tag$21676#1"]& ]}, {}, {}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, 
+     Charting`ScaledFrameTicks[{Identity, Identity}]}, {Automatic, 
+     Charting`ScaledFrameTicks[{Identity, Identity}]}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->All,
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
+    AbsolutePointSize[6], "ScalingFunctions" -> None, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{0, 10}, {-0.27844792622026604`, 0.8999999979591836}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{{3.7225182779709997`*^9, 
+  3.722518310216*^9}},ExpressionUUID->"1feced1e-6033-46ad-9159-fc6f1b220912"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1109, 982},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification:>1.5 Inherited,
+FrontEndVersion->"11.1 for Microsoft Windows (64-bit) (April 18, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 158, 2, 58, "Subsubsection", "ExpressionUUID" -> \
+"a078411d-5187-4089-adc2-671aa58d60da"],
+Cell[CellGroupData[{
+Cell[763, 28, 3226, 64, 418, "Input", "ExpressionUUID" -> \
+"41efe0d7-cd68-4def-a2b7-ce2a63a3c014"],
+Cell[3992, 94, 2192, 43, 105, "Output", "ExpressionUUID" -> \
+"1f4c348c-a5d7-46ff-b0ec-4dc0cdf03af1"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6233, 143, 155, 2, 58, "Subsubsection", "ExpressionUUID" -> \
+"97475c05-1872-4108-ad72-385c2fb84524"],
+Cell[CellGroupData[{
+Cell[6413, 149, 4099, 85, 615, "Input", "ExpressionUUID" -> \
+"a55968a9-5376-4d73-afbc-71601117388e"],
+Cell[10515, 236, 1289, 35, 129, "Output", "ExpressionUUID" -> \
+"b14fb825-442e-4e05-8b0c-def9a7ebf046"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11841, 276, 308, 8, 66, "Input", "ExpressionUUID" -> \
+"384b4c51-41a5-4248-b534-91f9d21e7ea8"],
+Cell[12152, 286, 4428, 90, 343, "Output", "ExpressionUUID" -> \
+"1feced1e-6033-46ad-9159-fc6f1b220912"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

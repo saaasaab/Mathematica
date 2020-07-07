@@ -1,0 +1,177 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6148,        169]
+NotebookOptionsPosition[      5708,        151]
+NotebookOutlinePosition[      6052,        166]
+CellTagsIndexPosition[      6009,        163]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"n", "=", "3"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"startNum", " ", "=", " ", 
+   RowBox[{"RandomInteger", "[", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "n"}], "}"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"startColor", " ", "=", " ", 
+   RowBox[{"RandomInteger", "[", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "n"}], "}"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"blocks", "=", 
+  RowBox[{"ConstantArray", "[", 
+   RowBox[{"0", ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "n"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"totalRows", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"totalBlocks", " ", "=", " ", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Colors", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", "\[Rule]", "red"}], ",", 
+     RowBox[{"2", "\[Rule]", "white"}], ",", 
+     RowBox[{"3", "\[Rule]", " ", "black"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"deltas", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "3"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "3"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"deltas", "=", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "1", ",", "2", ",", "2", ",", "3", ",", "3"}], 
+   "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "1"}], ",", 
+   RowBox[{"i", "\[LessEqual]", "3"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"For", "[", 
+    RowBox[{
+     RowBox[{"j", "=", "1"}], ",", 
+     RowBox[{"j", "\[LessEqual]", "3"}], ",", 
+     RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"startNum", " ", "=", " ", 
+       RowBox[{"RandomInteger", "[", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "n"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"startColor", " ", "=", " ", 
+       RowBox[{"RandomInteger", "[", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "n"}], "}"}], "]"}]}], ";"}]}], 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", "]"}]}], 
+  "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "1"}], ",", 
+   RowBox[{"i", "\[LessEqual]", "startNum"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"blocks", "\[LeftDoubleBracket]", "\[RightDoubleBracket]"}], 
+    "\[LeftDoubleBracket]", "\[RightDoubleBracket]"}]}], 
+  "\[IndentingNewLine]", "  ", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"blocks", "\[LeftDoubleBracket]", "\[RightDoubleBracket]"}], 
+  "\[LeftDoubleBracket]", "\[RightDoubleBracket]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"totalBlocks", "++"}], ";"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "Rules", "\[IndentingNewLine]", "n", " ", "number", " ", "of", " ", 
+    "blocks", " ", "per", " ", 
+    RowBox[{"row", ".", "  ", "No"}], " ", "overlap", "\[IndentingNewLine]", 
+    "block", " ", "needs", " ", "2", " ", "or", " ", "each", " ", "color"}], 
+   "\[IndentingNewLine]", "*)"}]}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.7303952268310003`*^9, 3.730395229092*^9}, {
+   3.7303953631070004`*^9, 3.7303954849379997`*^9}, {3.73039554301*^9, 
+   3.7303955435559998`*^9}, {3.730395579137*^9, 3.730395603451*^9}, {
+   3.7303956347200003`*^9, 3.7303956994560003`*^9}, {3.730395822571*^9, 
+   3.730395861903*^9}, {3.730396098315*^9, 3.73039611309*^9}, {
+   3.7303961536470003`*^9, 3.7303962309560003`*^9}, {3.7303962624370003`*^9, 
+   3.730396301317*^9}, {3.7303963518719997`*^9, 3.730396379058*^9}, {
+   3.7303964109960003`*^9, 3.730396438057*^9}, {3.730396487001*^9, 
+   3.730396500159*^9}, {3.7303965905699997`*^9, 3.730396622574*^9}, {
+   3.7303967828050003`*^9, 3.730396845925*^9}, {3.7303973800875*^9, 
+   3.7303973862415*^9}, {3.7303974298805*^9, 3.7303974472145*^9}, 
+   3.7303977678234997`*^9, {3.7303978037635*^9, 3.7303978038645*^9}, {
+   3.7303978401105003`*^9, 3.7303978530345*^9}, 3.7303979455505*^9, 
+   3.7304049940865*^9},ExpressionUUID->"01573e52-d18c-444f-a388-34ff94169733"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.7303956752*^9, 3.730396231789*^9, {3.7303962766940002`*^9, 
+   3.7303962854*^9}},ExpressionUUID->"f5a12b6e-e1b0-4bbf-a6ab-b023451e83d6"]
+}, Open  ]]
+},
+WindowSize->{759, 459},
+WindowMargins->{{91, Automatic}, {Automatic, 242}},
+FrontEndVersion->"11.1 for Microsoft Windows (64-bit) (April 18, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4688, 113, 563, "Input", "ExpressionUUID" -> \
+"01573e52-d18c-444f-a388-34ff94169733"],
+Cell[5271, 137, 421, 11, 30, "Output", "ExpressionUUID" -> \
+"f5a12b6e-e1b0-4bbf-a6ab-b023451e83d6"]
+}, Open  ]]
+}
+]
+*)
+

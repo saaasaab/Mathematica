@@ -1,0 +1,1807 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     72856,       1798]
+NotebookOptionsPosition[     71881,       1762]
+NotebookOutlinePosition[     72252,       1778]
+CellTagsIndexPosition[     72209,       1775]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Clear", "[", "\"\<Global`*\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.6726196191658688`*^9, 3.672619627325486*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"tab", "=", 
+    RowBox[{"(", "\[NoBreak]", GridBox[{
+       {"a", "b", "c", "d", "e", "f", "g", "h", "i"},
+       {"j", "k", "l", "m", "n", "i0", "p", "q", "r"},
+       {"s", "t", "u", "v", "w", "x", "y", "z", "A"},
+       {"B", "F", "G", "H", "J", "L", "M", "P", "Q"},
+       {"R", "S", "T", "U", "V", "W", "X", "Y", "Z"},
+       {"\[Alpha]", "\[Beta]", "\[Chi]", "\[Delta]", "\[Epsilon]", "\[Phi]", 
+        "\[Gamma]", "\[Eta]", "\[Iota]"},
+       {"\[CurlyPhi]", "\[Kappa]", "\[Lambda]", "\[Mu]", "\[Nu]", "\[Omega]", 
+        "\[Theta]", "\[Rho]", "\[Sigma]"},
+       {"\[Tau]", "\[Upsilon]", "\[Omega]", "\[Xi]", "\[Psi]", "\[Zeta]", 
+        "\[CapitalAlpha]", "\[CapitalBeta]", "\[CapitalChi]"},
+       {"\[CapitalDelta]", "\[CapitalEpsilon]", "\[CapitalPhi]", 
+        "\[CapitalGamma]", "\[CapitalEta]", "\[CapitalIota]", 
+        "\[CapitalKappa]", "\[CapitalLambda]", "\[CapitalMu]"}
+      }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.672619617678851*^9, 3.672619691118663*^9}, {
+   3.672619839658369*^9, 3.6726200108406334`*^9}, {3.672620070886533*^9, 
+   3.6726201086852894`*^9}, {3.6726208740012116`*^9, 3.672620952240142*^9}, 
+   3.672621062653281*^9, 3.6726225894682994`*^9}],
+
+Cell[BoxData[""], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"eqns", "=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"Total", "[", GridBox[{
+           {"a"},
+           {"j"},
+           {"s"},
+           {"B"},
+           {"R"},
+           {"\[Alpha]"},
+           {"\[CurlyPhi]"},
+           {"\[Tau]"},
+           {"\[CapitalDelta]"}
+          }], "]"}], "[", 
+        RowBox[{"[", 
+         RowBox[{"-", "1"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Total", "[", GridBox[{
+           {"b"},
+           {"k"},
+           {"t"},
+           {"F"},
+           {"S"},
+           {"\[Beta]"},
+           {"\[Kappa]"},
+           {"\[Upsilon]"},
+           {"\[CapitalEpsilon]"}
+          }], "]"}], "[", 
+        RowBox[{"[", 
+         RowBox[{"-", "1"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Total", "[", GridBox[{
+           {"c"},
+           {"l"},
+           {"u"},
+           {"G"},
+           {"T"},
+           {"\[Chi]"},
+           {"\[Lambda]"},
+           {"\[Omega]o"},
+           {"\[CapitalPhi]"}
+          }], "]"}], "[", 
+        RowBox[{"[", 
+         RowBox[{"-", "1"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Total", "[", GridBox[{
+           {"d"},
+           {"m"},
+           {"v"},
+           {"H"},
+           {"U"},
+           {"\[Delta]"},
+           {"\[Mu]"},
+           {"\[Xi]"},
+           {"\[CapitalGamma]"}
+          }], "]"}], "[", 
+        RowBox[{"[", 
+         RowBox[{"-", "1"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Total", "[", GridBox[{
+           {"e"},
+           {"n"},
+           {"w"},
+           {"J"},
+           {"V"},
+           {"\[Epsilon]"},
+           {"\[Nu]"},
+           {"\[Psi]"},
+           {"\[CapitalEta]"}
+          }], "]"}], "[", 
+        RowBox[{"[", 
+         RowBox[{"-", "1"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Total", "[", GridBox[{
+           {"f"},
+           {"io"},
+           {"x"},
+           {"L"},
+           {"W"},
+           {"\[Phi]"},
+           {"\[Omega]"},
+           {"\[Zeta]"},
+           {"\[CapitalIota]"}
+          }], "]"}], "[", 
+        RowBox[{"[", 
+         RowBox[{"-", "1"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Total", "[", GridBox[{
+           {"g"},
+           {"p"},
+           {"y"},
+           {"M"},
+           {"X"},
+           {"\[Gamma]"},
+           {"\[Theta]"},
+           {"\[CapitalAlpha]"},
+           {"\[CapitalKappa]"}
+          }], "]"}], "[", 
+        RowBox[{"[", 
+         RowBox[{"-", "1"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Total", "[", GridBox[{
+           {"h"},
+           {"q"},
+           {"z"},
+           {"P"},
+           {"Y"},
+           {"\[Eta]"},
+           {"\[Rho]"},
+           {"\[CapitalBeta]"},
+           {"\[CapitalLambda]"}
+          }], "]"}], "[", 
+        RowBox[{"[", 
+         RowBox[{"-", "1"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Total", "[", GridBox[{
+           {"i"},
+           {"r"},
+           {"A"},
+           {"Q"},
+           {"Z"},
+           {"\[Iota]"},
+           {"\[Sigma]"},
+           {"\[CapitalChi]"},
+           {"\[CapitalMu]"}
+          }], "]"}], "[", 
+        RowBox[{"[", 
+         RowBox[{"-", "1"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"tab", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"tab", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"tab", "[", 
+         RowBox[{"[", "3", "]"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"tab", "[", 
+         RowBox[{"[", "4", "]"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"tab", "[", 
+         RowBox[{"[", "5", "]"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"tab", "[", 
+         RowBox[{"[", "6", "]"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"tab", "[", 
+         RowBox[{"[", "7", "]"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"tab", "[", 
+         RowBox[{"[", "8", "]"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"tab", "[", 
+         RowBox[{"[", "9", "]"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"a", "b", "c"},
+           {"j", "k", "l"},
+           {"s", "t", "u"}
+          }], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"d", "e", "f"},
+           {"m", "n", "io"},
+           {"v", "w", "x"}
+          }], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"g", "h", "i"},
+           {"p", "q", "r"},
+           {"y", "z", "A"}
+          }], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"B", "F", "G"},
+           {"R", "S", "T"},
+           {"\[Alpha]", "\[Beta]", "\[Chi]"}
+          }], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"H", "J", "L"},
+           {"U", "V", "W"},
+           {"\[Delta]", "\[Epsilon]", "\[Phi]"}
+          }], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"M", "P", "Q"},
+           {"X", "Y", "Z"},
+           {"\[Gamma]", "\[Eta]", "\[Iota]"}
+          }], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"\[CurlyPhi]", "\[Kappa]", "\[Lambda]"},
+           {"\[Tau]", "\[Upsilon]", "\[Omega]o"},
+           {"\[CapitalDelta]", "\[CapitalEpsilon]", "\[CapitalPhi]"}
+          }], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"\[Mu]", "\[Nu]", "\[Omega]"},
+           {"\[Xi]", "\[Psi]", "\[Zeta]"},
+           {"\[CapitalGamma]", "\[CapitalEta]", "\[CapitalIota]"}
+          }], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"\[Theta]", "\[Rho]", "\[Sigma]"},
+           {"\[CapitalAlpha]", "\[CapitalBeta]", "\[CapitalChi]"},
+           {"\[CapitalKappa]", "\[CapitalLambda]", "\[CapitalMu]"}
+          }], "]"}], "]"}], "\[Equal]", "9"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"a", "b", "c"},
+           {"j", "k", "l"},
+           {"s", "t", "u"},
+           {"B", "F", "G"},
+           {"R", "S", "T"},
+           {"\[Alpha]", "\[Beta]", "\[Chi]"},
+           {"\[CurlyPhi]", "\[Kappa]", "\[Lambda]"},
+           {"\[Tau]", "\[Upsilon]", "\[Omega]o"},
+           {"\[CapitalDelta]", "\[CapitalEpsilon]", "\[CapitalPhi]"}
+          }], "]"}], "]"}], "\[Equal]", "27"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"d", "e", "f"},
+           {"m", "n", "io"},
+           {"v", "w", "x"},
+           {"H", "J", "L"},
+           {"U", "V", "W"},
+           {"\[Delta]", "\[Epsilon]", "\[Phi]"},
+           {"\[Mu]", "\[Nu]", "\[Omega]"},
+           {"\[Xi]", "\[Psi]", "\[Zeta]"},
+           {"\[CapitalGamma]", "\[CapitalEta]", "\[CapitalIota]"}
+          }], "]"}], "]"}], "\[Equal]", "27"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"g", "h", "i"},
+           {"p", "q", "r"},
+           {"y", "z", "A"},
+           {"M", "P", "Q"},
+           {"X", "Y", "Z"},
+           {"\[Gamma]", "\[Eta]", "\[Iota]"},
+           {"\[Theta]", "\[Rho]", "\[Sigma]"},
+           {"\[CapitalAlpha]", "\[CapitalBeta]", "\[CapitalChi]"},
+           {"\[CapitalKappa]", "\[CapitalLambda]", "\[CapitalMu]"}
+          }], "]"}], "]"}], "\[Equal]", "27"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"a", "b", "c"},
+           {"j", "k", "l"},
+           {"s", "t", "u"},
+           {"B", "F", "G"},
+           {"R", "S", "T"},
+           {"\[Alpha]", "\[Beta]", "\[Chi]"}
+          }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"B", "F", "G"},
+           {"R", "S", "T"},
+           {"\[Alpha]", "\[Beta]", "\[Chi]"},
+           {"\[CurlyPhi]", "\[Kappa]", "\[Lambda]"},
+           {"\[Tau]", "\[Upsilon]", "\[Omega]o"},
+           {"\[CapitalDelta]", "\[CapitalEpsilon]", "\[CapitalPhi]"}
+          }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"a", "b", "c"},
+           {"j", "k", "l"},
+           {"s", "t", "u"},
+           {"\[CurlyPhi]", "\[Kappa]", "\[Lambda]"},
+           {"\[Tau]", "\[Upsilon]", "\[Omega]o"},
+           {"\[CapitalDelta]", "\[CapitalEpsilon]", "\[CapitalPhi]"}
+          }], "]"}], "]"}], "\[Equal]", "18"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"d", "e", "f"},
+           {"m", "n", "io"},
+           {"v", "w", "x"},
+           {"H", "J", "L"},
+           {"U", "V", "W"},
+           {"\[Delta]", "\[Epsilon]", "\[Phi]"}
+          }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"H", "J", "L"},
+           {"U", "V", "W"},
+           {"\[Delta]", "\[Epsilon]", "\[Phi]"},
+           {"\[Mu]", "\[Nu]", "\[Omega]"},
+           {"\[Xi]", "\[Psi]", "\[Zeta]"},
+           {"\[CapitalGamma]", "\[CapitalEta]", "\[CapitalIota]"}
+          }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"d", "e", "f"},
+           {"m", "n", "io"},
+           {"v", "w", "x"},
+           {"\[Mu]", "\[Nu]", "\[Omega]"},
+           {"\[Xi]", "\[Psi]", "\[Zeta]"},
+           {"\[CapitalGamma]", "\[CapitalEta]", "\[CapitalIota]"}
+          }], "]"}], "]"}], "\[Equal]", "18"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"g", "h", "i"},
+           {"p", "q", "r"},
+           {"y", "z", "A"},
+           {"M", "P", "Q"},
+           {"X", "Y", "Z"},
+           {"\[Gamma]", "\[Eta]", "\[Iota]"}
+          }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"M", "P", "Q"},
+           {"X", "Y", "Z"},
+           {"\[Gamma]", "\[Eta]", "\[Iota]"},
+           {"\[Theta]", "\[Rho]", "\[Sigma]"},
+           {"\[CapitalAlpha]", "\[CapitalBeta]", "\[CapitalChi]"},
+           {"\[CapitalKappa]", "\[CapitalLambda]", "\[CapitalMu]"}
+          }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"g", "h", "i"},
+           {"p", "q", "r"},
+           {"y", "z", "A"},
+           {"\[Theta]", "\[Rho]", "\[Sigma]"},
+           {"\[CapitalAlpha]", "\[CapitalBeta]", "\[CapitalChi]"},
+           {"\[CapitalKappa]", "\[CapitalLambda]", "\[CapitalMu]"}
+          }], "]"}], "]"}], "\[Equal]", "18"}], ",", "\[IndentingNewLine]", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"a", "b", "c", "d", "e", "f", "g", "h", "i"},
+           {"j", "k", "l", "m", "n", "io", "p", "q", "r"},
+           {"s", "t", "u", "v", "w", "x", "y", "z", "A"}
+          }], "]"}], "]"}], "\[Equal]", "27"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"B", "F", "G", "H", "J", "L", "M", "P", "Q"},
+           {"R", "S", "T", "U", "V", "W", "X", "Y", "Z"},
+           {"\[Alpha]", "\[Beta]", "\[Chi]", "\[Delta]", "\[Epsilon]", 
+            "\[Phi]", "\[Gamma]", "\[Eta]", "\[Iota]"}
+          }], "]"}], "]"}], "\[Equal]", "27"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"\[CurlyPhi]", "\[Kappa]", "\[Lambda]", "\[Mu]", "\[Nu]", 
+            "\[Omega]", "\[Theta]", "\[Rho]", "\[Sigma]"},
+           {"\[Tau]", "\[Upsilon]", "\[Omega]o", "\[Xi]", "\[Psi]", "\[Zeta]",
+             "\[CapitalAlpha]", "\[CapitalBeta]", "\[CapitalChi]"},
+           {"\[CapitalDelta]", "\[CapitalEpsilon]", "\[CapitalPhi]", 
+            "\[CapitalGamma]", "\[CapitalEta]", "\[CapitalIota]", 
+            "\[CapitalKappa]", "\[CapitalLambda]", "\[CapitalMu]"}
+          }], "]"}], "]"}], "\[Equal]", "27"}], ",", "\[IndentingNewLine]", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"a", "b", "c", "d", "e", "f"},
+           {"j", "k", "l", "m", "n", "io"},
+           {"s", "t", "u", "v", "w", "x"}
+          }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"d", "e", "f", "g", "h", "i"},
+           {"m", "n", "io", "p", "q", "r"},
+           {"v", "w", "x", "y", "z", "A"}
+          }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"a", "b", "c", "g", "h", "i"},
+           {"j", "k", "l", "p", "q", "r"},
+           {"s", "t", "u", "y", "z", "A"}
+          }], "]"}], "]"}], "\[Equal]", "18"}], ",", "\[IndentingNewLine]", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"B", "F", "G", "H", "J", "L"},
+           {"R", "S", "T", "U", "V", "W"},
+           {"\[Alpha]", "\[Beta]", "\[Chi]", "\[Delta]", "\[Epsilon]", 
+            "\[Phi]"}
+          }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"H", "J", "L", "M", "P", "Q"},
+           {"U", "V", "W", "X", "Y", "Z"},
+           {"\[Delta]", "\[Epsilon]", "\[Phi]", "\[Gamma]", "\[Eta]", 
+            "\[Iota]"}
+          }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"B", "F", "G", "M", "P", "Q"},
+           {"R", "S", "T", "X", "Y", "Z"},
+           {"\[Alpha]", "\[Beta]", "\[Chi]", "\[Gamma]", "\[Eta]", "\[Iota]"}
+          }], "]"}], "]"}], "\[Equal]", "18"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"\[CurlyPhi]", "\[Kappa]", "\[Lambda]", "\[Mu]", "\[Nu]", 
+            "\[Omega]"},
+           {"\[Tau]", "\[Upsilon]", "\[Omega]o", "\[Xi]", "\[Psi]", "\[Zeta]"},
+           {"\[CapitalDelta]", "\[CapitalEpsilon]", "\[CapitalPhi]", 
+            "\[CapitalGamma]", "\[CapitalEta]", "\[CapitalIota]"}
+          }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"\[Mu]", "\[Nu]", "\[Omega]", "\[Theta]", "\[Rho]", "\[Sigma]"},
+           {"\[Xi]", "\[Psi]", "\[Zeta]", "\[CapitalAlpha]", "\[CapitalBeta]",
+             "\[CapitalChi]"},
+           {"\[CapitalGamma]", "\[CapitalEta]", "\[CapitalIota]", 
+            "\[CapitalKappa]", "\[CapitalLambda]", "\[CapitalMu]"}
+          }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Total", "[", GridBox[{
+           {"\[CurlyPhi]", "\[Kappa]", "\[Lambda]", "\[Theta]", "\[Rho]", 
+            "\[Sigma]"},
+           {"\[Tau]", "\[Upsilon]", "\[Omega]o", "\[CapitalAlpha]", 
+            "\[CapitalBeta]", "\[CapitalChi]"},
+           {"\[CapitalDelta]", "\[CapitalEpsilon]", "\[CapitalPhi]", 
+            "\[CapitalKappa]", "\[CapitalLambda]", "\[CapitalMu]"}
+          }], "]"}], "]"}], "\[Equal]", "18"}]}], "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", "}"}]}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Length", "[", "eqns", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.6726201228448462`*^9, 3.6726205981185217`*^9}, {
+  3.672620967435954*^9, 3.6726209743821774`*^9}, {3.6726210828627915`*^9, 
+  3.672621279018465*^9}, {3.672621311653298*^9, 3.6726213780459986`*^9}, {
+  3.6726214194553022`*^9, 3.6726214795340767`*^9}, {3.6726215450536003`*^9, 
+  3.6726218575175695`*^9}, {3.6726226041607213`*^9, 3.672622643948195*^9}, {
+  3.6726228492016554`*^9, 3.6726228978569336`*^9}, {3.672622940420508*^9, 
+  3.6726229460013323`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+    "a", "+", "B", "+", "j", "+", "R", "+", "s", "+", "\[Alpha]", "+", 
+     "\[CapitalDelta]", "+", "\[Tau]", "+", "\[CurlyPhi]"}], "\[Equal]", 
+    "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "b", "+", "F", "+", "k", "+", "S", "+", "t", "+", "\[Beta]", "+", 
+     "\[CapitalEpsilon]", "+", "\[Kappa]", "+", "\[Upsilon]"}], "\[Equal]", 
+    "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "c", "+", "G", "+", "l", "+", "T", "+", "u", "+", "\[Lambda]", "+", 
+     "\[CapitalPhi]", "+", "\[Chi]", "+", "\[Omega]"}], "\[Equal]", "9"}], 
+   ",", 
+   RowBox[{
+    RowBox[{
+    "d", "+", "H", "+", "m", "+", "U", "+", "v", "+", "\[CapitalGamma]", "+", 
+     "\[Delta]", "+", "\[Mu]", "+", "\[Xi]"}], "\[Equal]", "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "e", "+", "J", "+", "n", "+", "V", "+", "w", "+", "\[Epsilon]", "+", 
+     "\[CapitalEta]", "+", "\[Nu]", "+", "\[Psi]"}], "\[Equal]", "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "f", "+", "i", "+", "L", "+", "W", "+", "x", "+", "\[Zeta]", "+", 
+     "\[CapitalIota]", "+", "\[Phi]", "+", "\[Omega]"}], "\[Equal]", "9"}], 
+   ",", 
+   RowBox[{
+    RowBox[{
+    "g", "+", "M", "+", "p", "+", "X", "+", "y", "+", "\[CapitalAlpha]", "+", 
+     "\[Gamma]", "+", "\[Theta]", "+", "\[CapitalKappa]"}], "\[Equal]", "9"}],
+    ",", 
+   RowBox[{
+    RowBox[{
+    "h", "+", "P", "+", "q", "+", "Y", "+", "z", "+", "\[CapitalBeta]", "+", 
+     "\[Eta]", "+", "\[CapitalLambda]", "+", "\[Rho]"}], "\[Equal]", "9"}], 
+   ",", 
+   RowBox[{
+    RowBox[{
+    "A", "+", "i", "+", "Q", "+", "r", "+", "Z", "+", "\[Iota]", "+", 
+     "\[CapitalMu]", "+", "\[Sigma]", "+", "\[CapitalChi]"}], "\[Equal]", 
+    "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "a", "+", "b", "+", "c", "+", "d", "+", "e", "+", "f", "+", "g", "+", "h",
+      "+", "i"}], "\[Equal]", "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "i", "+", "j", "+", "k", "+", "l", "+", "m", "+", "n", "+", "p", "+", "q",
+      "+", "r"}], "\[Equal]", "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "A", "+", "s", "+", "t", "+", "u", "+", "v", "+", "w", "+", "x", "+", "y",
+      "+", "z"}], "\[Equal]", "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "B", "+", "F", "+", "G", "+", "H", "+", "J", "+", "L", "+", "M", "+", "P",
+      "+", "Q"}], "\[Equal]", "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "R", "+", "S", "+", "T", "+", "U", "+", "V", "+", "W", "+", "X", "+", "Y",
+      "+", "Z"}], "\[Equal]", "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "\[Alpha]", "+", "\[Beta]", "+", "\[Gamma]", "+", "\[Delta]", "+", 
+     "\[Epsilon]", "+", "\[Eta]", "+", "\[Iota]", "+", "\[Phi]", "+", 
+     "\[Chi]"}], "\[Equal]", "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "\[Theta]", "+", "\[Kappa]", "+", "\[Lambda]", "+", "\[Mu]", "+", "\[Nu]",
+      "+", "\[Rho]", "+", "\[Sigma]", "+", "\[CurlyPhi]", "+", "\[Omega]"}], 
+    "\[Equal]", "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "\[CapitalAlpha]", "+", "\[CapitalBeta]", "+", "\[Zeta]", "+", "\[Xi]", 
+     "+", "\[Tau]", "+", "\[Upsilon]", "+", "\[CapitalChi]", "+", "\[Psi]", 
+     "+", "\[Omega]"}], "\[Equal]", "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "\[CapitalGamma]", "+", "\[CapitalDelta]", "+", "\[CapitalEpsilon]", "+", 
+     "\[CapitalEta]", "+", "\[CapitalIota]", "+", "\[CapitalKappa]", "+", 
+     "\[CapitalLambda]", "+", "\[CapitalMu]", "+", "\[CapitalPhi]"}], 
+    "\[Equal]", "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "a", "+", "b", "+", "c", "+", "j", "+", "k", "+", "l", "+", "s", "+", "t",
+      "+", "u"}], "\[Equal]", "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "d", "+", "e", "+", "f", "+", "i", "+", "m", "+", "n", "+", "v", "+", "w",
+      "+", "x"}], "\[Equal]", "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "A", "+", "g", "+", "h", "+", "i", "+", "p", "+", "q", "+", "r", "+", "y",
+      "+", "z"}], "\[Equal]", "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "B", "+", "F", "+", "G", "+", "R", "+", "S", "+", "T", "+", "\[Alpha]", 
+     "+", "\[Beta]", "+", "\[Chi]"}], "\[Equal]", "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "H", "+", "J", "+", "L", "+", "U", "+", "V", "+", "W", "+", "\[Delta]", 
+     "+", "\[Epsilon]", "+", "\[Phi]"}], "\[Equal]", "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "M", "+", "P", "+", "Q", "+", "X", "+", "Y", "+", "Z", "+", "\[Gamma]", 
+     "+", "\[Eta]", "+", "\[Iota]"}], "\[Equal]", "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "\[CapitalDelta]", "+", "\[CapitalEpsilon]", "+", "\[Kappa]", "+", 
+     "\[Lambda]", "+", "\[Tau]", "+", "\[Upsilon]", "+", "\[CurlyPhi]", "+", 
+     "\[CapitalPhi]", "+", "\[Omega]"}], "\[Equal]", "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "\[CapitalGamma]", "+", "\[Zeta]", "+", "\[CapitalEta]", "+", 
+     "\[CapitalIota]", "+", "\[Mu]", "+", "\[Nu]", "+", "\[Xi]", "+", 
+     "\[Psi]", "+", "\[Omega]"}], "\[Equal]", "9"}], ",", 
+   RowBox[{
+    RowBox[{
+    "\[CapitalAlpha]", "+", "\[CapitalBeta]", "+", "\[Theta]", "+", 
+     "\[CapitalKappa]", "+", "\[CapitalLambda]", "+", "\[CapitalMu]", "+", 
+     "\[Rho]", "+", "\[Sigma]", "+", "\[CapitalChi]"}], "\[Equal]", "9"}], 
+   ",", 
+   RowBox[{
+    RowBox[{
+    "a", "+", "b", "+", "B", "+", "c", "+", "F", "+", "G", "+", "j", "+", "k",
+      "+", "l", "+", "R", "+", "s", "+", "S", "+", "t", "+", "T", "+", "u", 
+     "+", "\[Alpha]", "+", "\[Beta]", "+", "\[CapitalDelta]", "+", 
+     "\[CapitalEpsilon]", "+", "\[Kappa]", "+", "\[Lambda]", "+", "\[Tau]", 
+     "+", "\[Upsilon]", "+", "\[CurlyPhi]", "+", "\[CapitalPhi]", "+", 
+     "\[Chi]", "+", "\[Omega]"}], "\[Equal]", "27"}], ",", 
+   RowBox[{
+    RowBox[{
+    "d", "+", "e", "+", "f", "+", "H", "+", "i", "+", "J", "+", "L", "+", "m",
+      "+", "n", "+", "U", "+", "v", "+", "V", "+", "w", "+", "W", "+", "x", 
+     "+", "\[CapitalGamma]", "+", "\[Delta]", "+", "\[Epsilon]", "+", 
+     "\[Zeta]", "+", "\[CapitalEta]", "+", "\[CapitalIota]", "+", "\[Mu]", 
+     "+", "\[Nu]", "+", "\[Xi]", "+", "\[Phi]", "+", "\[Psi]", "+", 
+     "\[Omega]"}], "\[Equal]", "27"}], ",", 
+   RowBox[{
+    RowBox[{
+    "A", "+", "g", "+", "h", "+", "i", "+", "M", "+", "p", "+", "P", "+", "q",
+      "+", "Q", "+", "r", "+", "X", "+", "y", "+", "Y", "+", "z", "+", "Z", 
+     "+", "\[CapitalAlpha]", "+", "\[CapitalBeta]", "+", "\[Gamma]", "+", 
+     "\[Eta]", "+", "\[Theta]", "+", "\[Iota]", "+", "\[CapitalKappa]", "+", 
+     "\[CapitalLambda]", "+", "\[CapitalMu]", "+", "\[Rho]", "+", "\[Sigma]", 
+     "+", "\[CapitalChi]"}], "\[Equal]", "27"}], ",", 
+   RowBox[{
+    RowBox[{
+    "a", "+", "b", "+", "B", "+", "c", "+", "F", "+", "G", "+", "j", "+", "k",
+      "+", "l", "+", "R", "+", "s", "+", "S", "+", "t", "+", "T", "+", "u", 
+     "+", "\[Alpha]", "+", "\[Beta]", "+", "\[Chi]"}], "\[Equal]", "18"}], 
+   ",", 
+   RowBox[{
+    RowBox[{
+    "B", "+", "F", "+", "G", "+", "R", "+", "S", "+", "T", "+", "\[Alpha]", 
+     "+", "\[Beta]", "+", "\[CapitalDelta]", "+", "\[CapitalEpsilon]", "+", 
+     "\[Kappa]", "+", "\[Lambda]", "+", "\[Tau]", "+", "\[Upsilon]", "+", 
+     "\[CurlyPhi]", "+", "\[CapitalPhi]", "+", "\[Chi]", "+", "\[Omega]"}], 
+    "\[Equal]", "18"}], ",", 
+   RowBox[{
+    RowBox[{
+    "a", "+", "b", "+", "c", "+", "j", "+", "k", "+", "l", "+", "s", "+", "t",
+      "+", "u", "+", "\[CapitalDelta]", "+", "\[CapitalEpsilon]", "+", 
+     "\[Kappa]", "+", "\[Lambda]", "+", "\[Tau]", "+", "\[Upsilon]", "+", 
+     "\[CurlyPhi]", "+", "\[CapitalPhi]", "+", "\[Omega]"}], "\[Equal]", 
+    "18"}], ",", 
+   RowBox[{
+    RowBox[{
+    "d", "+", "e", "+", "f", "+", "H", "+", "i", "+", "J", "+", "L", "+", "m",
+      "+", "n", "+", "U", "+", "v", "+", "V", "+", "w", "+", "W", "+", "x", 
+     "+", "\[Delta]", "+", "\[Epsilon]", "+", "\[Phi]"}], "\[Equal]", "18"}], 
+   ",", 
+   RowBox[{
+    RowBox[{
+    "H", "+", "J", "+", "L", "+", "U", "+", "V", "+", "W", "+", 
+     "\[CapitalGamma]", "+", "\[Delta]", "+", "\[Epsilon]", "+", "\[Zeta]", 
+     "+", "\[CapitalEta]", "+", "\[CapitalIota]", "+", "\[Mu]", "+", "\[Nu]", 
+     "+", "\[Xi]", "+", "\[Phi]", "+", "\[Psi]", "+", "\[Omega]"}], 
+    "\[Equal]", "18"}], ",", 
+   RowBox[{
+    RowBox[{
+    "d", "+", "e", "+", "f", "+", "i", "+", "m", "+", "n", "+", "v", "+", "w",
+      "+", "x", "+", "\[CapitalGamma]", "+", "\[Zeta]", "+", "\[CapitalEta]", 
+     "+", "\[CapitalIota]", "+", "\[Mu]", "+", "\[Nu]", "+", "\[Xi]", "+", 
+     "\[Psi]", "+", "\[Omega]"}], "\[Equal]", "18"}], ",", 
+   RowBox[{
+    RowBox[{
+    "A", "+", "g", "+", "h", "+", "i", "+", "M", "+", "p", "+", "P", "+", "q",
+      "+", "Q", "+", "r", "+", "X", "+", "y", "+", "Y", "+", "z", "+", "Z", 
+     "+", "\[Gamma]", "+", "\[Eta]", "+", "\[Iota]"}], "\[Equal]", "18"}], 
+   ",", 
+   RowBox[{
+    RowBox[{
+    "M", "+", "P", "+", "Q", "+", "X", "+", "Y", "+", "Z", "+", 
+     "\[CapitalAlpha]", "+", "\[CapitalBeta]", "+", "\[Gamma]", "+", "\[Eta]",
+      "+", "\[Theta]", "+", "\[Iota]", "+", "\[CapitalKappa]", "+", 
+     "\[CapitalLambda]", "+", "\[CapitalMu]", "+", "\[Rho]", "+", "\[Sigma]", 
+     "+", "\[CapitalChi]"}], "\[Equal]", "18"}], ",", 
+   RowBox[{
+    RowBox[{
+    "A", "+", "g", "+", "h", "+", "i", "+", "p", "+", "q", "+", "r", "+", "y",
+      "+", "z", "+", "\[CapitalAlpha]", "+", "\[CapitalBeta]", "+", 
+     "\[Theta]", "+", "\[CapitalKappa]", "+", "\[CapitalLambda]", "+", 
+     "\[CapitalMu]", "+", "\[Rho]", "+", "\[Sigma]", "+", "\[CapitalChi]"}], 
+    "\[Equal]", "18"}], ",", 
+   RowBox[{
+    RowBox[{
+    "a", "+", "A", "+", "b", "+", "c", "+", "d", "+", "e", "+", "f", "+", "g",
+      "+", "h", "+", 
+     RowBox[{"2", " ", "i"}], "+", "j", "+", "k", "+", "l", "+", "m", "+", 
+     "n", "+", "p", "+", "q", "+", "r", "+", "s", "+", "t", "+", "u", "+", 
+     "v", "+", "w", "+", "x", "+", "y", "+", "z"}], "\[Equal]", "27"}], ",", 
+   RowBox[{
+    RowBox[{
+    "B", "+", "F", "+", "G", "+", "H", "+", "J", "+", "L", "+", "M", "+", "P",
+      "+", "Q", "+", "R", "+", "S", "+", "T", "+", "U", "+", "V", "+", "W", 
+     "+", "X", "+", "Y", "+", "Z", "+", "\[Alpha]", "+", "\[Beta]", "+", 
+     "\[Gamma]", "+", "\[Delta]", "+", "\[Epsilon]", "+", "\[Eta]", "+", 
+     "\[Iota]", "+", "\[Phi]", "+", "\[Chi]"}], "\[Equal]", "27"}], ",", 
+   RowBox[{
+    RowBox[{
+    "\[CapitalAlpha]", "+", "\[CapitalBeta]", "+", "\[CapitalGamma]", "+", 
+     "\[CapitalDelta]", "+", "\[CapitalEpsilon]", "+", "\[Zeta]", "+", 
+     "\[CapitalEta]", "+", "\[Theta]", "+", "\[CapitalIota]", "+", "\[Kappa]",
+      "+", "\[CapitalKappa]", "+", "\[Lambda]", "+", "\[CapitalLambda]", "+", 
+     "\[Mu]", "+", "\[CapitalMu]", "+", "\[Nu]", "+", "\[Xi]", "+", "\[Rho]", 
+     "+", "\[Sigma]", "+", "\[Tau]", "+", "\[Upsilon]", "+", "\[CurlyPhi]", 
+     "+", "\[CapitalPhi]", "+", "\[CapitalChi]", "+", "\[Psi]", "+", 
+     RowBox[{"2", " ", "\[Omega]"}]}], "\[Equal]", "27"}], ",", 
+   RowBox[{
+    RowBox[{
+    "a", "+", "b", "+", "c", "+", "d", "+", "e", "+", "f", "+", "i", "+", "j",
+      "+", "k", "+", "l", "+", "m", "+", "n", "+", "s", "+", "t", "+", "u", 
+     "+", "v", "+", "w", "+", "x"}], "\[Equal]", "18"}], ",", 
+   RowBox[{
+    RowBox[{"A", "+", "d", "+", "e", "+", "f", "+", "g", "+", "h", "+", 
+     RowBox[{"2", " ", "i"}], "+", "m", "+", "n", "+", "p", "+", "q", "+", 
+     "r", "+", "v", "+", "w", "+", "x", "+", "y", "+", "z"}], "\[Equal]", 
+    "18"}], ",", 
+   RowBox[{
+    RowBox[{
+    "a", "+", "A", "+", "b", "+", "c", "+", "g", "+", "h", "+", "i", "+", "j",
+      "+", "k", "+", "l", "+", "p", "+", "q", "+", "r", "+", "s", "+", "t", 
+     "+", "u", "+", "y", "+", "z"}], "\[Equal]", "18"}], ",", 
+   RowBox[{
+    RowBox[{
+    "B", "+", "F", "+", "G", "+", "H", "+", "J", "+", "L", "+", "R", "+", "S",
+      "+", "T", "+", "U", "+", "V", "+", "W", "+", "\[Alpha]", "+", "\[Beta]",
+      "+", "\[Delta]", "+", "\[Epsilon]", "+", "\[Phi]", "+", "\[Chi]"}], 
+    "\[Equal]", "18"}], ",", 
+   RowBox[{
+    RowBox[{
+    "H", "+", "J", "+", "L", "+", "M", "+", "P", "+", "Q", "+", "U", "+", "V",
+      "+", "W", "+", "X", "+", "Y", "+", "Z", "+", "\[Gamma]", "+", 
+     "\[Delta]", "+", "\[Epsilon]", "+", "\[Eta]", "+", "\[Iota]", "+", 
+     "\[Phi]"}], "\[Equal]", "18"}], ",", 
+   RowBox[{
+    RowBox[{
+    "B", "+", "F", "+", "G", "+", "M", "+", "P", "+", "Q", "+", "R", "+", "S",
+      "+", "T", "+", "X", "+", "Y", "+", "Z", "+", "\[Alpha]", "+", "\[Beta]",
+      "+", "\[Gamma]", "+", "\[Eta]", "+", "\[Iota]", "+", "\[Chi]"}], 
+    "\[Equal]", "18"}], ",", 
+   RowBox[{
+    RowBox[{
+    "\[CapitalGamma]", "+", "\[CapitalDelta]", "+", "\[CapitalEpsilon]", "+", 
+     "\[Zeta]", "+", "\[CapitalEta]", "+", "\[CapitalIota]", "+", "\[Kappa]", 
+     "+", "\[Lambda]", "+", "\[Mu]", "+", "\[Nu]", "+", "\[Xi]", "+", 
+     "\[Tau]", "+", "\[Upsilon]", "+", "\[CurlyPhi]", "+", "\[CapitalPhi]", 
+     "+", "\[Psi]", "+", 
+     RowBox[{"2", " ", "\[Omega]"}]}], "\[Equal]", "18"}], ",", 
+   RowBox[{
+    RowBox[{
+    "\[CapitalAlpha]", "+", "\[CapitalBeta]", "+", "\[CapitalGamma]", "+", 
+     "\[Zeta]", "+", "\[CapitalEta]", "+", "\[Theta]", "+", "\[CapitalIota]", 
+     "+", "\[CapitalKappa]", "+", "\[CapitalLambda]", "+", "\[Mu]", "+", 
+     "\[CapitalMu]", "+", "\[Nu]", "+", "\[Xi]", "+", "\[Rho]", "+", 
+     "\[Sigma]", "+", "\[CapitalChi]", "+", "\[Psi]", "+", "\[Omega]"}], 
+    "\[Equal]", "18"}], ",", 
+   RowBox[{
+    RowBox[{
+    "\[CapitalAlpha]", "+", "\[CapitalBeta]", "+", "\[CapitalDelta]", "+", 
+     "\[CapitalEpsilon]", "+", "\[Theta]", "+", "\[Kappa]", "+", 
+     "\[CapitalKappa]", "+", "\[Lambda]", "+", "\[CapitalLambda]", "+", 
+     "\[CapitalMu]", "+", "\[Rho]", "+", "\[Sigma]", "+", "\[Tau]", "+", 
+     "\[Upsilon]", "+", "\[CurlyPhi]", "+", "\[CapitalPhi]", "+", 
+     "\[CapitalChi]", "+", "\[Omega]"}], "\[Equal]", "18"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.6726202123637333`*^9, 3.6726202325837746`*^9}, 
+   3.672620319583436*^9, {3.6726205621804724`*^9, 3.6726205985161114`*^9}, 
+   3.672621000503726*^9, {3.6726211990259132`*^9, 3.6726212488582964`*^9}, 
+   3.6726213578921824`*^9, 3.6726214803064613`*^9, 3.6726216020319357`*^9, {
+   3.672621696252516*^9, 3.672621726366951*^9}, {3.672621833131834*^9, 
+   3.67262185793519*^9}}],
+
+Cell[BoxData["51"], "Output",
+ CellChangeTimes->{{3.6726202123637333`*^9, 3.6726202325837746`*^9}, 
+   3.672620319583436*^9, {3.6726205621804724`*^9, 3.6726205985161114`*^9}, 
+   3.672621000503726*^9, {3.6726211990259132`*^9, 3.6726212488582964`*^9}, 
+   3.6726213578921824`*^9, 3.6726214803064613`*^9, 3.6726216020319357`*^9, {
+   3.672621696252516*^9, 3.672621726366951*^9}, {3.672621833131834*^9, 
+   3.67262185793519*^9}}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6726220610550065`*^9, 3.6726220657249784`*^9}, 
+   3.6726232692882476`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {"\[Placeholder]", "b", "c", "\[Placeholder]", "e", "\[Placeholder]", 
+       "\[Placeholder]", "h", "\[Placeholder]"},
+      {"j", "\[Placeholder]", "l", "m", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "r"},
+      {"\[Placeholder]", "\[Placeholder]", "u", "\[Placeholder]", "w", "x", 
+       "y", "\[Placeholder]", "\[Placeholder]"},
+      {"B", "F", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "L", 
+       "\[Placeholder]", "P", "\[Placeholder]"},
+      {"\[Placeholder]", "S", "\[Placeholder]", "\[Placeholder]", "V", 
+       "\[Placeholder]", "\[Placeholder]", "Y", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Beta]", "\[Placeholder]", "\[Delta]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Eta]", 
+       "\[Iota]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Lambda]", "\[Mu]", "\[Nu]", 
+       "\[Placeholder]", "\[Theta]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Tau]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Zeta]", "\[CapitalAlpha]", "\[Placeholder]", 
+       "\[CapitalChi]"},
+      {"\[Placeholder]", "\[CapitalEpsilon]", "\[Placeholder]", 
+       "\[Placeholder]", "\[CapitalEta]", "\[Placeholder]", "\[CapitalKappa]",
+        "\[CapitalLambda]", "\[Placeholder]"}
+     }], "\[NoBreak]", ")"}], "=", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {"\[Placeholder]", "9", "5", "\[Placeholder]", "7", "\[Placeholder]", 
+       "\[Placeholder]", "6", "\[Placeholder]"},
+      {"8", "\[Placeholder]", "3", "2", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "5"},
+      {"\[Placeholder]", "\[Placeholder]", "4", "\[Placeholder]", "1", "8", 
+       "3", "\[Placeholder]", "\[Placeholder]"},
+      {"7", "3", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "1", 
+       "\[Placeholder]", "8", "\[Placeholder]"},
+      {"\[Placeholder]", "5", "\[Placeholder]", "\[Placeholder]", "6", 
+       "\[Placeholder]", "\[Placeholder]", "9", "\[Placeholder]"},
+      {"\[Placeholder]", "8", "\[Placeholder]", "4", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "7", "1"},
+      {"\[Placeholder]", "\[Placeholder]", "8", "6", "5", "\[Placeholder]", 
+       "9", "\[Placeholder]", "\[Placeholder]"},
+      {"1", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "3", "4", "\[Placeholder]", "2"},
+      {"\[Placeholder]", "2", "\[Placeholder]", "\[Placeholder]", "4", 
+       "\[Placeholder]", "8", "3", "\[Placeholder]"}
+     }], "\[NoBreak]", ")"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6726220400265865`*^9, 3.672622332340942*^9}, {
+  3.6726223786332912`*^9, 3.6726223828088827`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "\[Placeholder]", ",", "9", ",", "5", ",", "\[Placeholder]", ",", "7", 
+     ",", "\[Placeholder]", ",", "\[Placeholder]", ",", "6", ",", 
+     "\[Placeholder]"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "8", ",", "\[Placeholder]", ",", "3", ",", "2", ",", "\[Placeholder]", 
+     ",", "\[Placeholder]", ",", "\[Placeholder]", ",", "\[Placeholder]", ",",
+      "5"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "\[Placeholder]", ",", "\[Placeholder]", ",", "4", ",", "\[Placeholder]", 
+     ",", "1", ",", "8", ",", "3", ",", "\[Placeholder]", ",", 
+     "\[Placeholder]"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "7", ",", "3", ",", "\[Placeholder]", ",", "\[Placeholder]", ",", 
+     "\[Placeholder]", ",", "1", ",", "\[Placeholder]", ",", "8", ",", 
+     "\[Placeholder]"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "\[Placeholder]", ",", "5", ",", "\[Placeholder]", ",", "\[Placeholder]", 
+     ",", "6", ",", "\[Placeholder]", ",", "\[Placeholder]", ",", "9", ",", 
+     "\[Placeholder]"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "\[Placeholder]", ",", "8", ",", "\[Placeholder]", ",", "4", ",", 
+     "\[Placeholder]", ",", "\[Placeholder]", ",", "\[Placeholder]", ",", "7",
+      ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "\[Placeholder]", ",", "\[Placeholder]", ",", "8", ",", "6", ",", "5", 
+     ",", "\[Placeholder]", ",", "9", ",", "\[Placeholder]", ",", 
+     "\[Placeholder]"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "1", ",", "\[Placeholder]", ",", "\[Placeholder]", ",", "\[Placeholder]", 
+     ",", "\[Placeholder]", ",", "3", ",", "4", ",", "\[Placeholder]", ",", 
+     "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "\[Placeholder]", ",", "2", ",", "\[Placeholder]", ",", "\[Placeholder]", 
+     ",", "4", ",", "\[Placeholder]", ",", "8", ",", "3", ",", 
+     "\[Placeholder]"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.672622056139182*^9, {3.6726223750963793`*^9, 3.6726223794521475`*^9}}],
+
+Cell[BoxData["5"], "Output",
+ CellChangeTimes->{
+  3.672622056139182*^9, {3.6726223750963793`*^9, 3.6726223794521475`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Clear", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Length", "[", 
+  RowBox[{"Total", "[", 
+   RowBox[{"Total", "[", 
+    RowBox[{"(", "\[NoBreak]", GridBox[{
+       {"\[Placeholder]", "b", "c", "\[Placeholder]", "e", "\[Placeholder]", 
+        "\[Placeholder]", "h", "\[Placeholder]"},
+       {"j", "\[Placeholder]", "l", "m", "\[Placeholder]", "\[Placeholder]", 
+        "\[Placeholder]", "\[Placeholder]", "r"},
+       {"\[Placeholder]", "\[Placeholder]", "u", "\[Placeholder]", "w", "x", 
+        "y", "\[Placeholder]", "\[Placeholder]"},
+       {"B", "F", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "L", 
+        "\[Placeholder]", "P", "\[Placeholder]"},
+       {"\[Placeholder]", "S", "\[Placeholder]", "\[Placeholder]", "V", 
+        "\[Placeholder]", "\[Placeholder]", "Y", "\[Placeholder]"},
+       {"\[Placeholder]", "\[Beta]", "\[Placeholder]", "\[Delta]", 
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Eta]", 
+        "\[Iota]"},
+       {"\[Placeholder]", "\[Placeholder]", "\[Lambda]", "\[Mu]", "\[Nu]", 
+        "\[Placeholder]", "\[Theta]", "\[Placeholder]", "\[Placeholder]"},
+       {"\[Tau]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+        "\[Placeholder]", "\[Zeta]", "\[CapitalAlpha]", "\[Placeholder]", 
+        "\[CapitalChi]"},
+       {"\[Placeholder]", "\[CapitalEpsilon]", "\[Placeholder]", 
+        "\[Placeholder]", "\[CapitalEta]", "\[Placeholder]", 
+        "\[CapitalKappa]", "\[CapitalLambda]", "\[Placeholder]"}
+      }], "\[NoBreak]", ")"}], "]"}], "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.672622341734653*^9, 3.672622365394146*^9}, {
+  3.6726231374958706`*^9, 3.672623145171237*^9}, {3.672623279258309*^9, 
+  3.672623291329097*^9}}],
+
+Cell[BoxData["36"], "Output",
+ CellChangeTimes->{{3.672622344555929*^9, 3.672622365909785*^9}, {
+  3.672623280070835*^9, 3.6726232919541187`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Clear", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"tab", "=", 
+     RowBox[{"(", "\[NoBreak]", GridBox[{
+        {"a", "b", "c", "d", "e", "f", "g", "h", "i"},
+        {"j", "k", "l", "m", "n", "i", "p", "q", "r"},
+        {"s", "t", "u", "v", "w", "x", "y", "z", "A"},
+        {"B", "F", "G", "H", "J", "L", "M", "P", "Q"},
+        {"R", "S", "T", "U", "V", "W", "X", "Y", "Z"},
+        {"\[Alpha]", "\[Beta]", "\[Chi]", "\[Delta]", "\[Epsilon]", "\[Phi]", 
+         "\[Gamma]", "\[Eta]", "\[Iota]"},
+        {"\[CurlyPhi]", "\[Kappa]", "\[Lambda]", "\[Mu]", "\[Nu]", "\[Omega]",
+          "\[Theta]", "\[Rho]", "\[Sigma]"},
+        {"\[Tau]", "\[Upsilon]", "\[Omega]", "\[Xi]", "\[Psi]", "\[Zeta]", 
+         "\[CapitalAlpha]", "\[CapitalBeta]", "\[CapitalChi]"},
+        {"\[CapitalDelta]", "\[CapitalEpsilon]", "\[CapitalPhi]", 
+         "\[CapitalGamma]", "\[CapitalEta]", "\[CapitalIota]", 
+         "\[CapitalKappa]", "\[CapitalLambda]", "\[CapitalMu]"}
+       }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", "\[NoBreak]", GridBox[{
+        {"\[Placeholder]", "b", "c", "\[Placeholder]", "e", "\[Placeholder]", 
+         "\[Placeholder]", "h", "\[Placeholder]"},
+        {"j", "\[Placeholder]", "l", "m", "\[Placeholder]", "\[Placeholder]", 
+         "\[Placeholder]", "\[Placeholder]", "r"},
+        {"\[Placeholder]", "\[Placeholder]", "u", "\[Placeholder]", "w", "x", 
+         "y", "\[Placeholder]", "\[Placeholder]"},
+        {"B", "F", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "L", 
+         "\[Placeholder]", "P", "\[Placeholder]"},
+        {"\[Placeholder]", "S", "\[Placeholder]", "\[Placeholder]", "V", 
+         "\[Placeholder]", "\[Placeholder]", "Y", "\[Placeholder]"},
+        {"\[Placeholder]", "\[Beta]", "\[Placeholder]", "\[Delta]", 
+         "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Eta]", 
+         "\[Iota]"},
+        {"\[Placeholder]", "\[Placeholder]", "\[Lambda]", "\[Mu]", "\[Nu]", 
+         "\[Placeholder]", "\[Theta]", "\[Placeholder]", "\[Placeholder]"},
+        {"\[Tau]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+         "\[Placeholder]", "\[Zeta]", "\[CapitalAlpha]", "\[Placeholder]", 
+         "\[CapitalChi]"},
+        {"\[Placeholder]", "\[CapitalEpsilon]", "\[Placeholder]", 
+         "\[Placeholder]", "\[CapitalEta]", "\[Placeholder]", 
+         "\[CapitalKappa]", "\[CapitalLambda]", "\[Placeholder]"}
+       }], "\[NoBreak]", ")"}], "=", 
+     RowBox[{"(", "\[NoBreak]", GridBox[{
+        {"\[Placeholder]", "9", "5", "\[Placeholder]", "7", "\[Placeholder]", 
+         "\[Placeholder]", "6", "\[Placeholder]"},
+        {"8", "\[Placeholder]", "3", "2", "\[Placeholder]", "\[Placeholder]", 
+         "\[Placeholder]", "\[Placeholder]", "5"},
+        {"\[Placeholder]", "\[Placeholder]", "4", "\[Placeholder]", "1", "8", 
+         "3", "\[Placeholder]", "\[Placeholder]"},
+        {"7", "3", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "1", 
+         "\[Placeholder]", "8", "\[Placeholder]"},
+        {"\[Placeholder]", "5", "\[Placeholder]", "\[Placeholder]", "6", 
+         "\[Placeholder]", "\[Placeholder]", "9", "\[Placeholder]"},
+        {"\[Placeholder]", "8", "\[Placeholder]", "4", "\[Placeholder]", 
+         "\[Placeholder]", "\[Placeholder]", "7", "1"},
+        {"\[Placeholder]", "\[Placeholder]", "8", "6", "5", "\[Placeholder]", 
+         "9", "\[Placeholder]", "\[Placeholder]"},
+        {"1", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+         "\[Placeholder]", "3", "4", "\[Placeholder]", "2"},
+        {"\[Placeholder]", "2", "\[Placeholder]", "\[Placeholder]", "4", 
+         "\[Placeholder]", "8", "3", "\[Placeholder]"}
+       }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"eqns", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"Total", "[", GridBox[{
+            {"a"},
+            {"j"},
+            {"s"},
+            {"B"},
+            {"R"},
+            {"\[Alpha]"},
+            {"\[CurlyPhi]"},
+            {"\[Tau]"},
+            {"\[CapitalDelta]"}
+           }], "]"}], "[", 
+         RowBox[{"[", 
+          RowBox[{"-", "1"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Total", "[", GridBox[{
+            {"b"},
+            {"k"},
+            {"t"},
+            {"F"},
+            {"S"},
+            {"\[Beta]"},
+            {"\[Kappa]"},
+            {"\[Upsilon]"},
+            {"\[CapitalEpsilon]"}
+           }], "]"}], "[", 
+         RowBox[{"[", 
+          RowBox[{"-", "1"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Total", "[", GridBox[{
+            {"c"},
+            {"l"},
+            {"u"},
+            {"G"},
+            {"T"},
+            {"\[Chi]"},
+            {"\[Lambda]"},
+            {"\[Omega]o"},
+            {"\[CapitalPhi]"}
+           }], "]"}], "[", 
+         RowBox[{"[", 
+          RowBox[{"-", "1"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Total", "[", GridBox[{
+            {"d"},
+            {"m"},
+            {"v"},
+            {"H"},
+            {"U"},
+            {"\[Delta]"},
+            {"\[Mu]"},
+            {"\[Xi]"},
+            {"\[CapitalGamma]"}
+           }], "]"}], "[", 
+         RowBox[{"[", 
+          RowBox[{"-", "1"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Total", "[", GridBox[{
+            {"e"},
+            {"n"},
+            {"w"},
+            {"J"},
+            {"V"},
+            {"\[Epsilon]"},
+            {"\[Nu]"},
+            {"\[Psi]"},
+            {"\[CapitalEta]"}
+           }], "]"}], "[", 
+         RowBox[{"[", 
+          RowBox[{"-", "1"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Total", "[", GridBox[{
+            {"f"},
+            {"io"},
+            {"x"},
+            {"L"},
+            {"W"},
+            {"\[Phi]"},
+            {"\[Omega]"},
+            {"\[Zeta]"},
+            {"\[CapitalIota]"}
+           }], "]"}], "[", 
+         RowBox[{"[", 
+          RowBox[{"-", "1"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Total", "[", GridBox[{
+            {"g"},
+            {"p"},
+            {"y"},
+            {"M"},
+            {"X"},
+            {"\[Gamma]"},
+            {"\[Theta]"},
+            {"\[CapitalAlpha]"},
+            {"\[CapitalKappa]"}
+           }], "]"}], "[", 
+         RowBox[{"[", 
+          RowBox[{"-", "1"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Total", "[", GridBox[{
+            {"h"},
+            {"q"},
+            {"z"},
+            {"P"},
+            {"Y"},
+            {"\[Eta]"},
+            {"\[Rho]"},
+            {"\[CapitalBeta]"},
+            {"\[CapitalLambda]"}
+           }], "]"}], "[", 
+         RowBox[{"[", 
+          RowBox[{"-", "1"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Total", "[", GridBox[{
+            {"i"},
+            {"r"},
+            {"A"},
+            {"Q"},
+            {"Z"},
+            {"\[Iota]"},
+            {"\[Sigma]"},
+            {"\[CapitalChi]"},
+            {"\[CapitalMu]"}
+           }], "]"}], "[", 
+         RowBox[{"[", 
+          RowBox[{"-", "1"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"tab", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"tab", "[", 
+          RowBox[{"[", "2", "]"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"tab", "[", 
+          RowBox[{"[", "3", "]"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"tab", "[", 
+          RowBox[{"[", "4", "]"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"tab", "[", 
+          RowBox[{"[", "5", "]"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"tab", "[", 
+          RowBox[{"[", "6", "]"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"tab", "[", 
+          RowBox[{"[", "7", "]"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"tab", "[", 
+          RowBox[{"[", "8", "]"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"tab", "[", 
+          RowBox[{"[", "9", "]"}], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"a", "b", "c"},
+            {"j", "k", "l"},
+            {"s", "t", "u"}
+           }], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"d", "e", "f"},
+            {"m", "n", "io"},
+            {"v", "w", "x"}
+           }], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"g", "h", "i"},
+            {"p", "q", "r"},
+            {"y", "z", "A"}
+           }], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"B", "F", "G"},
+            {"R", "S", "T"},
+            {"\[Alpha]", "\[Beta]", "\[Chi]"}
+           }], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"H", "J", "L"},
+            {"U", "V", "W"},
+            {"\[Delta]", "\[Epsilon]", "\[Phi]"}
+           }], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"M", "P", "Q"},
+            {"X", "Y", "Z"},
+            {"\[Gamma]", "\[Eta]", "\[Iota]"}
+           }], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"\[CurlyPhi]", "\[Kappa]", "\[Lambda]"},
+            {"\[Tau]", "\[Upsilon]", "\[Omega]o"},
+            {"\[CapitalDelta]", "\[CapitalEpsilon]", "\[CapitalPhi]"}
+           }], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"\[Mu]", "\[Nu]", "\[Omega]"},
+            {"\[Xi]", "\[Psi]", "\[Zeta]"},
+            {"\[CapitalGamma]", "\[CapitalEta]", "\[CapitalIota]"}
+           }], "]"}], "]"}], "\[Equal]", "9"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"\[Theta]", "\[Rho]", "\[Sigma]"},
+            {"\[CapitalAlpha]", "\[CapitalBeta]", "\[CapitalChi]"},
+            {"\[CapitalKappa]", "\[CapitalLambda]", "\[CapitalMu]"}
+           }], "]"}], "]"}], "\[Equal]", "9"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"a", "b", "c"},
+            {"j", "k", "l"},
+            {"s", "t", "u"},
+            {"B", "F", "G"},
+            {"R", "S", "T"},
+            {"\[Alpha]", "\[Beta]", "\[Chi]"},
+            {"\[CurlyPhi]", "\[Kappa]", "\[Lambda]"},
+            {"\[Tau]", "\[Upsilon]", "\[Omega]o"},
+            {"\[CapitalDelta]", "\[CapitalEpsilon]", "\[CapitalPhi]"}
+           }], "]"}], "]"}], "\[Equal]", "27"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"d", "e", "f"},
+            {"m", "n", "io"},
+            {"v", "w", "x"},
+            {"H", "J", "L"},
+            {"U", "V", "W"},
+            {"\[Delta]", "\[Epsilon]", "\[Phi]"},
+            {"\[Mu]", "\[Nu]", "\[Omega]"},
+            {"\[Xi]", "\[Psi]", "\[Zeta]"},
+            {"\[CapitalGamma]", "\[CapitalEta]", "\[CapitalIota]"}
+           }], "]"}], "]"}], "\[Equal]", "27"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"g", "h", "i"},
+            {"p", "q", "r"},
+            {"y", "z", "A"},
+            {"M", "P", "Q"},
+            {"X", "Y", "Z"},
+            {"\[Gamma]", "\[Eta]", "\[Iota]"},
+            {"\[Theta]", "\[Rho]", "\[Sigma]"},
+            {"\[CapitalAlpha]", "\[CapitalBeta]", "\[CapitalChi]"},
+            {"\[CapitalKappa]", "\[CapitalLambda]", "\[CapitalMu]"}
+           }], "]"}], "]"}], "\[Equal]", "27"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"a", "b", "c"},
+            {"j", "k", "l"},
+            {"s", "t", "u"},
+            {"B", "F", "G"},
+            {"R", "S", "T"},
+            {"\[Alpha]", "\[Beta]", "\[Chi]"}
+           }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"B", "F", "G"},
+            {"R", "S", "T"},
+            {"\[Alpha]", "\[Beta]", "\[Chi]"},
+            {"\[CurlyPhi]", "\[Kappa]", "\[Lambda]"},
+            {"\[Tau]", "\[Upsilon]", "\[Omega]o"},
+            {"\[CapitalDelta]", "\[CapitalEpsilon]", "\[CapitalPhi]"}
+           }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"a", "b", "c"},
+            {"j", "k", "l"},
+            {"s", "t", "u"},
+            {"\[CurlyPhi]", "\[Kappa]", "\[Lambda]"},
+            {"\[Tau]", "\[Upsilon]", "\[Omega]o"},
+            {"\[CapitalDelta]", "\[CapitalEpsilon]", "\[CapitalPhi]"}
+           }], "]"}], "]"}], "\[Equal]", "18"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"d", "e", "f"},
+            {"m", "n", "io"},
+            {"v", "w", "x"},
+            {"H", "J", "L"},
+            {"U", "V", "W"},
+            {"\[Delta]", "\[Epsilon]", "\[Phi]"}
+           }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"H", "J", "L"},
+            {"U", "V", "W"},
+            {"\[Delta]", "\[Epsilon]", "\[Phi]"},
+            {"\[Mu]", "\[Nu]", "\[Omega]"},
+            {"\[Xi]", "\[Psi]", "\[Zeta]"},
+            {"\[CapitalGamma]", "\[CapitalEta]", "\[CapitalIota]"}
+           }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"d", "e", "f"},
+            {"m", "n", "io"},
+            {"v", "w", "x"},
+            {"\[Mu]", "\[Nu]", "\[Omega]"},
+            {"\[Xi]", "\[Psi]", "\[Zeta]"},
+            {"\[CapitalGamma]", "\[CapitalEta]", "\[CapitalIota]"}
+           }], "]"}], "]"}], "\[Equal]", "18"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"g", "h", "i"},
+            {"p", "q", "r"},
+            {"y", "z", "A"},
+            {"M", "P", "Q"},
+            {"X", "Y", "Z"},
+            {"\[Gamma]", "\[Eta]", "\[Iota]"}
+           }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"M", "P", "Q"},
+            {"X", "Y", "Z"},
+            {"\[Gamma]", "\[Eta]", "\[Iota]"},
+            {"\[Theta]", "\[Rho]", "\[Sigma]"},
+            {"\[CapitalAlpha]", "\[CapitalBeta]", "\[CapitalChi]"},
+            {"\[CapitalKappa]", "\[CapitalLambda]", "\[CapitalMu]"}
+           }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"g", "h", "i"},
+            {"p", "q", "r"},
+            {"y", "z", "A"},
+            {"\[Theta]", "\[Rho]", "\[Sigma]"},
+            {"\[CapitalAlpha]", "\[CapitalBeta]", "\[CapitalChi]"},
+            {"\[CapitalKappa]", "\[CapitalLambda]", "\[CapitalMu]"}
+           }], "]"}], "]"}], "\[Equal]", "18"}], ",", "\[IndentingNewLine]", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"a", "b", "c", "d", "e", "f", "g", "h", "i"},
+            {"j", "k", "l", "m", "n", "io", "p", "q", "r"},
+            {"s", "t", "u", "v", "w", "x", "y", "z", "A"}
+           }], "]"}], "]"}], "\[Equal]", "27"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"B", "F", "G", "H", "J", "L", "M", "P", "Q"},
+            {"R", "S", "T", "U", "V", "W", "X", "Y", "Z"},
+            {"\[Alpha]", "\[Beta]", "\[Chi]", "\[Delta]", "\[Epsilon]", 
+             "\[Phi]", "\[Gamma]", "\[Eta]", "\[Iota]"}
+           }], "]"}], "]"}], "\[Equal]", "27"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"\[CurlyPhi]", "\[Kappa]", "\[Lambda]", "\[Mu]", "\[Nu]", 
+             "\[Omega]", "\[Theta]", "\[Rho]", "\[Sigma]"},
+            {"\[Tau]", "\[Upsilon]", "\[Omega]o", "\[Xi]", "\[Psi]", 
+             "\[Zeta]", "\[CapitalAlpha]", "\[CapitalBeta]", "\[CapitalChi]"},
+            {"\[CapitalDelta]", "\[CapitalEpsilon]", "\[CapitalPhi]", 
+             "\[CapitalGamma]", "\[CapitalEta]", "\[CapitalIota]", 
+             "\[CapitalKappa]", "\[CapitalLambda]", "\[CapitalMu]"}
+           }], "]"}], "]"}], "\[Equal]", "27"}], ",", "\[IndentingNewLine]", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"a", "b", "c", "d", "e", "f"},
+            {"j", "k", "l", "m", "n", "io"},
+            {"s", "t", "u", "v", "w", "x"}
+           }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"d", "e", "f", "g", "h", "i"},
+            {"m", "n", "io", "p", "q", "r"},
+            {"v", "w", "x", "y", "z", "A"}
+           }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"a", "b", "c", "g", "h", "i"},
+            {"j", "k", "l", "p", "q", "r"},
+            {"s", "t", "u", "y", "z", "A"}
+           }], "]"}], "]"}], "\[Equal]", "18"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"B", "F", "G", "H", "J", "L"},
+            {"R", "S", "T", "U", "V", "W"},
+            {"\[Alpha]", "\[Beta]", "\[Chi]", "\[Delta]", "\[Epsilon]", 
+             "\[Phi]"}
+           }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"H", "J", "L", "M", "P", "Q"},
+            {"U", "V", "W", "X", "Y", "Z"},
+            {"\[Delta]", "\[Epsilon]", "\[Phi]", "\[Gamma]", "\[Eta]", 
+             "\[Iota]"}
+           }], "]"}], "]"}], "\[Equal]", "18"}], ",", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"B", "F", "G", "M", "P", "Q"},
+            {"R", "S", "T", "X", "Y", "Z"},
+            {"\[Alpha]", "\[Beta]", "\[Chi]", "\[Gamma]", "\[Eta]", "\[Iota]"}
+           }], "]"}], "]"}], "\[Equal]", "18"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Total", "[", GridBox[{
+            {"\[CurlyPhi]", "\[Kappa]", "\[Lambda]", "\[Mu]", "\[Nu]", 
+             "\[Omega]"},
+            {"\[Tau]", "\[Upsilon]", "\[Omega]o", "\[Xi]", "\[Psi]", 
+             "\[Zeta]"},
+            {"\[CapitalDelta]", "\[CapitalEpsilon]", "\[CapitalPhi]", 
+             "\[CapitalGamma]", "\[CapitalEta]", "\[CapitalIota]"}
+           }], "]"}], "]"}], "\[Equal]", "18"}]}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"NSolve", "[", 
+    RowBox[{"eqns", ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "a", ",", "d", ",", "f", ",", "g", ",", "i", ",", "k", ",", "n", ",", 
+       "i", ",", "k", ",", "n", ",", "io", ",", "p", ",", "q", ",", "s", ",", 
+       "t", ",", "v", ",", "z", ",", "A", ",", "G", ",", "H", ",", "J", ",", 
+       "M", ",", "Q", ",", "R", ",", "T", ",", "U", ",", "W", ",", "X", ",", 
+       "Z", ",", "\[Alpha]", ",", "\[Chi]", ",", "\[Epsilon]", ",", "\[Phi]", 
+       ",", "\[Gamma]", ",", "\[CurlyPhi]", ",", "\[Kappa]", ",", "\[Omega]", 
+       ",", "\[Rho]", ",", "\[Sigma]", ",", "\[Upsilon]", ",", "\[Omega]o", 
+       ",", "\[Xi]", ",", "\[Psi]", ",", "\[CapitalBeta]", ",", 
+       "\[CapitalDelta]", ",", "\[CapitalPhi]", ",", "\[CapitalGamma]", ",", 
+       "\[CapitalIota]", ",", "\[CapitalMu]"}], "}"}]}], "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"Length", "[", 
+    RowBox[{"{", 
+     RowBox[{
+     "a", ",", "d", ",", "f", ",", "g", ",", "i", ",", "k", ",", "n", ",", 
+      "i", ",", "k", ",", "n", ",", "io", ",", "p", ",", "q", ",", "s", ",", 
+      "t", ",", "v", ",", "z", ",", "A", ",", "G", ",", "H", ",", "J", ",", 
+      "M", ",", "Q", ",", "R", ",", "T", ",", "U", ",", "W", ",", "X", ",", 
+      "Z", ",", "\[Alpha]", ",", "\[Chi]", ",", "\[Epsilon]", ",", "\[Phi]", 
+      ",", "\[Gamma]", ",", "\[CurlyPhi]", ",", "\[Kappa]", ",", "\[Omega]", 
+      ",", "\[Rho]", ",", "\[Sigma]", ",", "\[Upsilon]", ",", "\[Omega]o", 
+      ",", "\[Xi]", ",", "\[Psi]", ",", "\[CapitalBeta]", ",", 
+      "\[CapitalDelta]", ",", "\[CapitalPhi]", ",", "\[CapitalGamma]", ",", 
+      "\[CapitalIota]", ",", "\[CapitalMu]"}], "}"}], "]"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.6726224117206287`*^9, 3.672622532638441*^9}, {
+  3.6726226871087813`*^9, 3.672622836862249*^9}, {3.6726229617221813`*^9, 
+  3.672623114059411*^9}, {3.672623189639923*^9, 3.6726232726999598`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"a", "\[Rule]", 
+     RowBox[{"13.`", "\[VeryThinSpace]", "+", 
+      RowBox[{"1.`", " ", "A"}], "+", 
+      RowBox[{"1.`", " ", "t"}], "+", 
+      RowBox[{"1.`", " ", "v"}], "+", 
+      RowBox[{"1.`", " ", "z"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalBeta]"}], "+", 
+      RowBox[{"1.`", " ", "\[CapitalGamma]"}], "+", 
+      RowBox[{"1.`", " ", "\[CapitalIota]"}], "+", 
+      RowBox[{"1.`", " ", "\[Kappa]"}]}]}], ",", 
+    RowBox[{"d", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "1.`"}], "+", 
+      RowBox[{"1.`", " ", "J"}], "-", 
+      RowBox[{"1.`", " ", "v"}], "+", 
+      RowBox[{"1.`", " ", "W"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalGamma]"}], "+", 
+      RowBox[{"1.`", " ", "\[Epsilon]"}], "-", 
+      RowBox[{"1.`", " ", "\[Xi]"}], "+", 
+      RowBox[{"1.`", " ", "\[Phi]"}]}]}], ",", 
+    RowBox[{"f", "\[Rule]", 
+     RowBox[{"5.`", "\[VeryThinSpace]", "+", 
+      RowBox[{"1.`", " ", "A"}], "+", 
+      RowBox[{"1.`", " ", "Q"}], "-", 
+      RowBox[{"1.`", " ", "W"}], "+", 
+      RowBox[{"1.`", " ", "Z"}], "+", 
+      RowBox[{"1.`", " ", "\[CapitalGamma]"}], "+", 
+      RowBox[{"1.`", " ", "\[CapitalMu]"}], "+", 
+      RowBox[{"1.`", " ", "\[Xi]"}], "+", 
+      RowBox[{"1.`", " ", "\[Sigma]"}], "-", 
+      RowBox[{"1.`", " ", "\[Phi]"}], "+", 
+      RowBox[{"1.`", " ", "\[Psi]"}]}]}], ",", 
+    RowBox[{"g", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "36.`"}], "-", 
+      RowBox[{"1.`", " ", "A"}], "-", 
+      RowBox[{"1.`", " ", "J"}], "-", 
+      RowBox[{"1.`", " ", "t"}], "-", 
+      RowBox[{"1.`", " ", "z"}], "+", 
+      RowBox[{"1.`", " ", "\[CapitalBeta]"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalGamma]"}], "-", 
+      RowBox[{"1.`", " ", "\[Epsilon]"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalIota]"}], "-", 
+      RowBox[{"1.`", " ", "\[Kappa]"}], "-", 
+      RowBox[{"1.`", " ", "\[Psi]"}]}]}], ",", 
+    RowBox[{"i", "\[Rule]", 
+     RowBox[{"1.`", "\[VeryThinSpace]", "-", 
+      RowBox[{"1.`", " ", "A"}], "-", 
+      RowBox[{"1.`", " ", "Q"}], "-", 
+      RowBox[{"1.`", " ", "Z"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalMu]"}], "-", 
+      RowBox[{"1.`", " ", "\[Sigma]"}]}]}], ",", 
+    RowBox[{"k", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "26.`"}], "-", 
+      RowBox[{"1.`", " ", "t"}], "+", 
+      RowBox[{"1.`", " ", "\[CapitalBeta]"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalGamma]"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalIota]"}], "-", 
+      RowBox[{"1.`", " ", "\[Kappa]"}]}]}], ",", 
+    RowBox[{"n", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "14.`"}], "-", 
+      RowBox[{"1.`", " ", "J"}], "-", 
+      RowBox[{"1.`", " ", "\[Epsilon]"}], "-", 
+      RowBox[{"1.`", " ", "\[Psi]"}]}]}], ",", 
+    RowBox[{"io", "\[Rule]", 
+     RowBox[{"1.`", "\[VeryThinSpace]", "-", 
+      RowBox[{"1.`", " ", "A"}], "-", 
+      RowBox[{"1.`", " ", "Q"}], "-", 
+      RowBox[{"1.`", " ", "Z"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalMu]"}], "-", 
+      RowBox[{"1.`", " ", "\[Sigma]"}]}]}], ",", 
+    RowBox[{"p", "\[Rule]", 
+     RowBox[{"37.`", "\[VeryThinSpace]", "+", 
+      RowBox[{"1.`", " ", "A"}], "+", 
+      RowBox[{"1.`", " ", "J"}], "+", 
+      RowBox[{"1.`", " ", "Q"}], "+", 
+      RowBox[{"1.`", " ", "t"}], "+", 
+      RowBox[{"1.`", " ", "z"}], "+", 
+      RowBox[{"1.`", " ", "Z"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalBeta]"}], "+", 
+      RowBox[{"1.`", " ", "\[CapitalGamma]"}], "+", 
+      RowBox[{"1.`", " ", "\[Epsilon]"}], "+", 
+      RowBox[{"1.`", " ", "\[CapitalIota]"}], "+", 
+      RowBox[{"1.`", " ", "\[Kappa]"}], "+", 
+      RowBox[{"1.`", " ", "\[Psi]"}]}]}], ",", 
+    RowBox[{"q", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "7.`"}], "-", 
+      RowBox[{"1.`", " ", "z"}], "+", 
+      RowBox[{"1.`", " ", "\[CapitalMu]"}], "+", 
+      RowBox[{"1.`", " ", "\[Sigma]"}]}]}], ",", 
+    RowBox[{"s", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "7.`"}], "-", 
+      RowBox[{"1.`", " ", "A"}], "-", 
+      RowBox[{"1.`", " ", "t"}], "-", 
+      RowBox[{"1.`", " ", "v"}], "-", 
+      RowBox[{"1.`", " ", "z"}]}]}], ",", 
+    RowBox[{"G", "\[Rule]", 
+     RowBox[{"8.`", "\[VeryThinSpace]", "+", 
+      RowBox[{"1.`", " ", "U"}], "+", 
+      RowBox[{"1.`", " ", "W"}], "+", 
+      RowBox[{"1.`", " ", "X"}], "+", 
+      RowBox[{"1.`", " ", "Z"}], "+", 
+      RowBox[{"1.`", " ", "\[Gamma]"}], "+", 
+      RowBox[{"1.`", " ", "\[Epsilon]"}], "+", 
+      RowBox[{"1.`", " ", "\[Phi]"}]}]}], ",", 
+    RowBox[{"H", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "2.`"}], "-", 
+      RowBox[{"1.`", " ", "J"}], "-", 
+      RowBox[{"1.`", " ", "U"}], "-", 
+      RowBox[{"1.`", " ", "W"}], "-", 
+      RowBox[{"1.`", " ", "\[Epsilon]"}], "-", 
+      RowBox[{"1.`", " ", "\[Phi]"}]}]}], ",", 
+    RowBox[{"M", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "16.`"}], "-", 
+      RowBox[{"1.`", " ", "Q"}], "-", 
+      RowBox[{"1.`", " ", "X"}], "-", 
+      RowBox[{"1.`", " ", "Z"}], "-", 
+      RowBox[{"1.`", " ", "\[Gamma]"}]}]}], ",", 
+    RowBox[{"R", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "1.`"}], "+", 
+      RowBox[{"1.`", " ", "\[Gamma]"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalGamma]"}], "+", 
+      RowBox[{"1.`", " ", "\[Epsilon]"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalIota]"}], "-", 
+      RowBox[{"1.`", " ", "\[Xi]"}], "+", 
+      RowBox[{"1.`", " ", "\[Phi]"}], "+", 
+      RowBox[{"1.`", " ", "\[CapitalPhi]"}], "+", 
+      RowBox[{"1.`", " ", "\[Chi]"}], "-", 
+      RowBox[{"1.`", " ", "\[Psi]"}]}]}], ",", 
+    RowBox[{"T", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "10.`"}], "-", 
+      RowBox[{"1.`", " ", "U"}], "-", 
+      RowBox[{"1.`", " ", "W"}], "-", 
+      RowBox[{"1.`", " ", "X"}], "-", 
+      RowBox[{"1.`", " ", "Z"}], "-", 
+      RowBox[{"1.`", " ", "\[Gamma]"}], "+", 
+      RowBox[{"1.`", " ", "\[CapitalGamma]"}], "-", 
+      RowBox[{"1.`", " ", "\[Epsilon]"}], "+", 
+      RowBox[{"1.`", " ", "\[CapitalIota]"}], "+", 
+      RowBox[{"1.`", " ", "\[Xi]"}], "-", 
+      RowBox[{"1.`", " ", "\[Phi]"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalPhi]"}], "-", 
+      RowBox[{"1.`", " ", "\[Chi]"}], "+", 
+      RowBox[{"1.`", " ", "\[Psi]"}]}]}], ",", 
+    RowBox[{"\[Alpha]", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "11.`"}], "-", 
+      RowBox[{"1.`", " ", "\[Gamma]"}], "-", 
+      RowBox[{"1.`", " ", "\[Epsilon]"}], "-", 
+      RowBox[{"1.`", " ", "\[Phi]"}], "-", 
+      RowBox[{"1.`", " ", "\[Chi]"}]}]}], ",", 
+    RowBox[{"\[CurlyPhi]", "\[Rule]", 
+     RowBox[{"7.`", "\[VeryThinSpace]", "+", 
+      RowBox[{"1.`", " ", "\[CapitalBeta]"}], "+", 
+      RowBox[{"1.`", " ", "\[CapitalGamma]"}], "+", 
+      RowBox[{"1.`", " ", "\[CapitalIota]"}], "-", 
+      RowBox[{"1.`", " ", "\[Kappa]"}], "+", 
+      RowBox[{"1.`", " ", "\[CapitalMu]"}], "+", 
+      RowBox[{"1.`", " ", "\[Xi]"}], "+", 
+      RowBox[{"1.`", " ", "\[Psi]"}]}]}], ",", 
+    RowBox[{"\[Omega]", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "9.`"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalGamma]"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalIota]"}], "-", 
+      RowBox[{"1.`", " ", "\[Xi]"}], "-", 
+      RowBox[{"1.`", " ", "\[Psi]"}]}]}], ",", 
+    RowBox[{"\[Rho]", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "17.`"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalBeta]"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalMu]"}], "-", 
+      RowBox[{"1.`", " ", "\[Sigma]"}]}]}], ",", 
+    RowBox[{"\[Upsilon]", "\[Rule]", 
+     RowBox[{"8.`", "\[VeryThinSpace]", "-", 
+      RowBox[{"1.`", " ", "\[CapitalBeta]"}], "+", 
+      RowBox[{"1.`", " ", "\[CapitalGamma]"}], "+", 
+      RowBox[{"1.`", " ", "\[CapitalIota]"}]}]}], ",", 
+    RowBox[{"\[Omega]o", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "9.`"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalGamma]"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalIota]"}], "-", 
+      RowBox[{"1.`", " ", "\[Xi]"}], "-", 
+      RowBox[{"1.`", " ", "\[Psi]"}]}]}], ",", 
+    RowBox[{"\[CapitalDelta]", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "8.`"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalGamma]"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalIota]"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalMu]"}], "-", 
+      RowBox[{"1.`", " ", "\[CapitalPhi]"}]}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.672623071580962*^9, 3.672623114496922*^9}, {
+   3.6726232010990515`*^9, 3.672623228083223*^9}, 3.6726234380722184`*^9}],
+
+Cell[BoxData["49"], "Output",
+ CellChangeTimes->{{3.672623071580962*^9, 3.672623114496922*^9}, {
+   3.6726232010990515`*^9, 3.672623228083223*^9}, 3.6726234380722184`*^9}]
+}, Open  ]]
+},
+WindowSize->{1520, 771},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification:>0.8 Inherited,
+FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 29, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 141, 2, 25, "Input"],
+Cell[702, 24, 1311, 24, 166, "Input"],
+Cell[2016, 50, 26, 0, 25, "Input"],
+Cell[CellGroupData[{
+Cell[2067, 54, 17499, 481, 904, "Input"],
+Cell[19569, 537, 13984, 297, 160, "Output"],
+Cell[33556, 836, 426, 6, 24, "Output"]
+}, Open  ]],
+Cell[33997, 845, 124, 2, 25, "Input"],
+Cell[CellGroupData[{
+Cell[34146, 851, 2777, 47, 121, "Input"],
+Cell[36926, 900, 2060, 49, 24, "Output"],
+Cell[38989, 951, 123, 2, 24, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39149, 958, 1766, 30, 148, "Input"],
+Cell[40918, 990, 146, 2, 24, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[41101, 997, 22192, 551, 1181, "Input"],
+Cell[63296, 1550, 8395, 205, 85, "Output"],
+Cell[71694, 1757, 171, 2, 24, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

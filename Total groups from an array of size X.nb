@@ -1,0 +1,79 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2004,         69]
+NotebookOptionsPosition[      1562,         52]
+NotebookOutlinePosition[      1935,         68]
+CellTagsIndexPosition[      1892,         65]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   RowBox[{
+    UnderoverscriptBox["\[Sum]", 
+     RowBox[{"n", "=", "1"}], "X"], 
+    RowBox[{
+     UnderoverscriptBox["\[Sum]", 
+      RowBox[{"m", "=", "1"}], 
+      RowBox[{"n", "-", "1"}]], "m"}]}], " ", "+", "X"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  FractionBox["1", "6"], " ", "X", " ", 
+  RowBox[{"(", 
+   RowBox[{"5", "+", 
+    SuperscriptBox["X", "2"]}], ")"}]}]}], "Input",
+ CellChangeTimes->{{3.740082714517*^9, 3.7400828246870003`*^9}, {
+  3.740084741493*^9, 3.7400847439905*^9}, {3.7400848187805*^9, 
+  3.740084819058*^9}},ExpressionUUID->"196f2b6b-a824-429d-8307-96c04f048219"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   FractionBox["1", "6"], " ", "X", " ", 
+   RowBox[{"(", 
+    RowBox[{"5", "+", 
+     SuperscriptBox["X", "2"]}], ")"}]}], "/.", 
+  RowBox[{"X", "\[Rule]", "14"}]}]], "Input",
+ CellChangeTimes->{{3.7400847552755003`*^9, 
+  3.7400847592755003`*^9}},ExpressionUUID->"93de2478-0bc9-432e-9c5d-\
+73ba8a5e932f"]
+},
+WindowSize->{759, 835},
+WindowMargins->{{95, Automatic}, {Automatic, 50}},
+Magnification:>1.3 Inherited,
+FrontEndVersion->"11.1 for Microsoft Windows (64-bit) (April 18, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 656, 18, 130, "Input", "ExpressionUUID" -> \
+"196f2b6b-a824-429d-8307-96c04f048219"],
+Cell[1217, 40, 341, 10, 65, InheritFromParent, "ExpressionUUID" -> \
+"93de2478-0bc9-432e-9c5d-73ba8a5e932f"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
